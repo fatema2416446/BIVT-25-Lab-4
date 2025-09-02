@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Green
     {
@@ -7,7 +7,7 @@
             bool answer = false;
 
             // code here
-
+            ReadLine ('xxx')
             // end
 
             return answer;
