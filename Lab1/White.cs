@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class White
     {
@@ -7,7 +7,7 @@
             bool answer = false;
 
             // code here
-
+            answer=true;
             // end
 
             return answer;
@@ -17,7 +17,6 @@
             bool answer = false;
 
             // code here
-
             // end
 
             return answer;
