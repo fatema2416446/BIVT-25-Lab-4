@@ -10,6 +10,8 @@
 
             // end
 
+            //
+
             return answer;
         }
         public bool Task2(int n)
@@ -84,4 +86,5 @@
             return answer;
         }
     }
+
 }
