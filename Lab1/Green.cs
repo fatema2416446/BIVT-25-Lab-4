@@ -2,6 +2,7 @@
 {
     public class Green
     {
+        //Check
         public bool Task1(double d)
         {
             bool answer = false;
@@ -84,4 +85,5 @@
             return answer;
         }
     }
+
 }
