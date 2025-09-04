@@ -6,11 +6,11 @@
         {
             //White white = new White();
             //Console.WriteLine(white.Task1(1.2));
-            //Console.WriteLine(white.Task2(2));
-            //Console.WriteLine(white.Task3(2.5, 1.89));
-            //Console.WriteLine(white.Task4(-2.5, 1.89));
-            //Console.WriteLine(white.Task5(0.5));
-            //Console.WriteLine(white.Task6(2.5, 1.89, 3));
+            //Console.Writeline(white.task2(2);
+            //Console.Writeline(white.task3(2, 1));
+            //Console.Writeline(;white.task4(-2, 1));
+            //Console.Writeline(white.task5(0))
+            //Console.WriteLine(white.Task7(23));
         }
     }
 }
