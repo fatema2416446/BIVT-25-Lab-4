@@ -3,7 +3,7 @@
     public class Blue
     {
         public bool Task1(int a, int b)
-        {
+      //  {
             bool answer = false;
 
             // code here
@@ -84,4 +84,5 @@
             return answer;
         }
     }
+
 }
