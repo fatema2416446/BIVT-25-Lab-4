@@ -1,4 +1,6 @@
-﻿namespace Lab1
+using System.Diagnostics.Tracing;
+
+namespace Lab1
 {
     public class Purple
     {
@@ -7,7 +9,20 @@
             bool answer = false;
 
             // code here
+            if (a == 0 || b == 0 || c == 0)
+            {
+                answer = false;
+            }
 
+            if (a > 0 && b > 0 && c > 0)
+            {
+                answer = true;
+            }
+
+            if (a < 0 && b < 0 && c < 0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -17,7 +32,20 @@
             bool answer = false;
 
             // code here
-
+            if (a != 0)
+            {
+                if (b % a == 0)
+                {
+                    answer = true;
+                }
+            }
+            if (b != 0)
+            {
+                if (a % b == 0)
+                {
+                    answer = true;
+                }
+            }
             // end
 
             return answer;
@@ -27,7 +55,26 @@
             bool answer = false;
 
             // code here
+            if (b >= 0)
+            {
+                if (a * a == b)
+                {
+                    answer = true;
+                }
+            }
 
+            if (a >= 0)
+            {
+                if (b * b == a)
+                {
+                    answer = true;
+                }
+            }
+
+            if (a * a * a == b || b * b * b == a)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -37,7 +84,8 @@
             double answer = 0;
 
             // code here
-
+            answer = f * f - 4 * d * g;
+            
             // end
 
             return answer;
@@ -47,7 +95,20 @@
             double answer = 0;
 
             // code here
+            if (x <= -1)
+            {
+                answer = 1;
+            }
 
+            if (x > -1 && x <= 1)
+            {
+                answer = -x;
+            }
+
+            if (x > 1)
+            {
+                answer = -1;
+            }
             // end
 
             return answer;
@@ -57,7 +118,14 @@
             bool answer = false;
 
             // code here
-
+            if (squareS <= 2 * (circleS / Math.PI))
+            {
+                answer = true;
+            }
+            else
+            {
+                answer = false;
+            }
             // end
 
             return answer;
@@ -68,7 +136,42 @@
             int answer = 0;
 
             // code here
-
+            if (s)
+            {
+                if (t)
+                {
+                    answer = 6;
+                }
+                else
+                {
+                    if (f)
+                    {
+                        answer = 10;
+                    }
+                    else
+                    {
+                        answer = 2;
+                    }
+                }
+            }
+            else
+            {
+                if (t)
+                {
+                    answer = 3;
+                }
+                else
+                {
+                    if (f)
+                    {
+                        answer = 5;
+                    }
+                    else
+                    {
+                        answer = 1;
+                    }
+                }
+            }
             // end
 
             return answer;
@@ -77,9 +180,22 @@
         {
             bool answer = false;
             const int bank = 10000;
-
             // code here
-            
+            if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))
+            {
+                answer = false;
+            }
+            else
+            {
+                if (((int)Math.Ceiling((double)pupils / 7) * salary) + (5 * pupils) <= bank)
+                {
+                    answer = true;
+                }
+                else
+                {
+                    answer = false;
+                }
+            }
             // end
 
             return answer;
