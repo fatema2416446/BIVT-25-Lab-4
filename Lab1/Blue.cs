@@ -83,9 +83,12 @@
             int A = a / 2;
             int B = b / 2;
             int C = c / 2;
-            if (A >= 1 && A == B && (C == A || C + 1 == A))
+            if (A < 1 || B < 1 || C < 1)
+                return false;
+            if (A == B && B == C) 
                 return true;
-
+            if (A == B && (C + 1 == A))
+                return true;
             return answer;
         }
     }
