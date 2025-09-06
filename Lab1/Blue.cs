@@ -83,11 +83,10 @@
             int A = a / 2;
             int B = b / 2;
             int C = c / 2;
-            if (A < 1 || B < 1 || C < 1)
-                return false;
-            if (A == B && B == C) 
+            int total = A + B + C;
+            if (total % 3 == 0 && total / 3 >= 1)
                 return true;
-            if (A == B && (C + 1 == A))
+            if ((total + 1) % 3 == 0 && (total + 1) / 3 >= 1)
                 return true;
             return answer;
         }
