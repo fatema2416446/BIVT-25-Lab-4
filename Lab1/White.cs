@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class White
     {
@@ -18,6 +18,7 @@
 
             // code here
             answer = n % 2 == 0;
+            // end
 
             return answer;
         }
@@ -43,17 +44,30 @@
             double answer = 0;
 
             // code here
-
+            if (Math.Abs(d) <= Math.Abs(f)) { 
+                answer = d;
+            }
+            else
+            {
+                answer = f;
+            }
             // end
 
-            return answer;
+                return answer;
         }
         public double Task5(double x)
         {
             double answer = 0;
 
             // code here
-
+            if (Math.Abs(x) > 1)
+            {
+                answer = 1;
+            }
+            else
+            {
+                answer = x;
+            }
             // end
 
             return answer;
@@ -63,9 +77,13 @@
             bool answer = false;
 
             // code here
+            double k = Math.Abs(x * x + y * y - r * r);
+            if (k <= Math.Pow(10, -6) || k <= r*r * 1e-4)
+            {
+                answer = true;
+            }
 
             // end
-
             return answer;
         }
 
@@ -74,7 +92,8 @@
             bool answer = false;
 
             // code here
-
+            int s = n * n;
+            answer = ((s - n > 2 * n) && (n % 2 == 0));
             // end
 
             return answer;
@@ -84,7 +103,7 @@
             bool answer = false;
 
             // code here
-
+            answer = (L <= 3 * 10) && ((T + M >= 5)) && (M % 2 == 0);
             // end
 
             return answer;
