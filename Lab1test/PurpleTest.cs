@@ -82,7 +82,7 @@
         {
             // Arrange
             var input = new double[] { 0, -0.55, 1, 3, -1, -2.3, 0.78, -0.3 };
-            var answer = new double[] { 0, 0.55,-1, -1, 1, 1, -0.78, 0.3 };
+            var answer = new double[] { 0, 0.55, -1, -1, 1, 1, -0.78, 0.3 };
             var test = new double[answer.Length];
             // Act
             for (int i = 0; i < answer.Length; i++)
@@ -120,7 +120,7 @@
         public void Test7()
         {
             // Arrange
-            var input = new bool[] { true, true, true,false, false, false, true, false, false };
+            var input = new bool[] { true, true, true, false, false, false, true, false, false };
             var answer = new double[] { 6, 6, 2, 1, 5, 3, 2, 5, 3 };
             var test = new double[answer.Length];
             // Act
