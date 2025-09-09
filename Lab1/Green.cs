@@ -22,8 +22,8 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            double c = (d + f) / 2;
-            if (c < 0)
+            
+            if ((d + f)/2 >= 0 )
             {
                 answer = true;
             }
@@ -83,16 +83,16 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            if (x< 0 && y>= 1 + x)
+           if (x>= 0 && y<= 1 - x&& x>= -1 && x <= 1 && y >= 0 && y <=1)
             {
                 answer = true;
             }
-            else if(x>= 0 && y<= 1 - x)
-            {
-                answer = true;
-            }
+           
+            
+            
+            
 
-                // end
+            // end
 
                 return answer;
         }
@@ -119,7 +119,10 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            if (X >= 7 && Y*X/2>=210 && Y * X / 2 <= 360)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
