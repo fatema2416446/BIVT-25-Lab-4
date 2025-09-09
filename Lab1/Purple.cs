@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Purple
     {
@@ -6,7 +6,15 @@
         {
             bool answer = false;
 
-            // code here
+            if (a > 0 && b > 0 && c > 0)
+            {
+                answer = true;
+            }
+            
+            if (a < 0 && b < 0 && c < 0)
+            {
+                answer = true;
+            }
 
             // end
 
@@ -16,8 +24,22 @@
         {
             bool answer = false;
 
-            // code here
-
+            if (a != 0)
+            {
+                if (b % a == 0)
+                {
+                    answer = true;
+                }
+            }
+            
+            if (b != 0)
+            {
+                if (a % b == 0)
+                {
+                    answer = true;
+                }
+            }
+            
             // end
 
             return answer;
@@ -26,7 +48,10 @@
         {
             bool answer = false;
 
-            // code here
+            if (a * a == b || a * a * a == b || b * b == a || b * b * b == a)
+            {
+                answer = true;
+            }
 
             // end
 
@@ -36,7 +61,7 @@
         {
             double answer = 0;
 
-            // code here
+            answer = f * f - 4 * d * g;
 
             // end
 
@@ -46,7 +71,20 @@
         {
             double answer = 0;
 
-            // code here
+            if (x <= -1)
+            {
+                answer = 1;
+            }
+            
+            else if (x > -1 && x <= 1)
+            {
+                answer = x * (-1);
+            }
+            
+            else
+            {
+                answer = -1;
+            }
 
             // end
 
@@ -56,7 +94,14 @@
         {
             bool answer = false;
 
-            // code here
+            double r = Math.Sqrt(circleS / Math.PI);
+            
+            double a = Math.Sqrt(squareS);
+
+            if (a * Math.Sqrt(2) <= 2 * r)
+            {
+                answer = true;
+            }
 
             // end
 
@@ -67,7 +112,42 @@
         {
             int answer = 0;
 
-            // code here
+            if (s)
+            {
+                if (t)
+                {
+                    answer = 6;
+                }
+                else
+                {
+                    if (f)
+                    {
+                        answer = 10;
+                    }
+                    else
+                    {
+                        answer = 2;
+                    }
+                }
+            }
+            else
+            {
+                if (t)
+                {
+                    answer = 3;
+                }
+                else
+                {
+                    if (f)
+                    {
+                        answer = 5;
+                    }
+                    else
+                    {
+                        answer = 1;
+                    }
+                }
+            }
 
             // end
 
@@ -78,11 +158,42 @@
             bool answer = false;
             const int bank = 10000;
 
-            // code here
+            int s = 0;
+            int d = 0;
+            int g = 0;
+
+            s = ((pupils + 6) / 7) * salary + pupils * 5;
             
+            if (s <= bank)
+            {
+                d += 1;
+            }
+            
+            if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+            {
+                g += 0;
+            }
+            else
+            {
+                g += 1;
+            }
+
+            if (d > 0 && g > 0)
+            {
+                answer = true;
+            }
+            else if (d > 0 && g == 0)
+            {
+                answer = false;
+            }
+            else
+            {
+                answer = false;
+            }
             // end
 
             return answer;
         }
     }
 }
+
