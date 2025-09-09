@@ -7,7 +7,10 @@
             bool answer = false;
 
             // code here
-
+            if ((a>0 && b>0 && c > 0) || (a<0 && b<0 && c < 0))
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -17,7 +20,10 @@
             bool answer = false;
 
             // code here
-
+            if ((a != 0 && b % a == 0) || (b!=0 && a%b==0))
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -27,7 +33,7 @@
             bool answer = false;
 
             // code here
-
+            if ((Math.Pow(a, 2) == b) || (Math.Pow(a, 3) == b) || (Math.Pow(b, 2) == a) || (Math.Pow(b, 3) == a)) answer = true;
             // end
 
             return answer;
@@ -37,7 +43,7 @@
             double answer = 0;
 
             // code here
-
+            answer = f * f - 4 * d * g;
             // end
 
             return answer;
@@ -47,17 +53,28 @@
             double answer = 0;
 
             // code here
+            if (x <= -1)
+            {
+                answer = 1;
+            }
+            else if (x > 1)
+            {
+                answer = -1;
+            }
+            else answer = -x;
+                // end
 
-            // end
-
-            return answer;
+                return answer;
         }
         public bool Task6(double squareS, double circleS)
         {
             bool answer = false;
 
             // code here
-
+            if (Math.Pow(circleS, 0.5)/Math.PI>=Math.Pow(squareS, 0.5) / 2)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -68,21 +85,67 @@
             int answer = 0;
 
             // code here
+            if (s)
+            {
+                if (t)
+                {
+                    answer = 6;
+                }
+                else
+                {
+                    if (f)
+                    {
+                        answer = 10;
+                    }
+                    else answer = 2;
+                }
+            }
+            else
+            {
+                if (t)
+                {
+                    answer = 3;
+                }
+                else
+                {
+                    if (f)
+                    {
+                        answer = 5;
+                    }
+                    else answer = 1;
+                }
+            }
+                // end
 
-            // end
-
-            return answer;
+                return answer;
         }
         public bool Task8(int year, int pupils, int salary)
         {
             bool answer = false;
             const int bank = 10000;
 
-            // code here
-            
-            // end
+            int cash = 0;
+            int avr = 0;
 
-            return answer;
+            // code here
+            if ((year % 4 != 0 && year%100!=0) || (year % 100==0 && year%400!=0))
+            {
+                cash += pupils * 5;
+                if (pupils % 7 == 0)
+                {
+                    avr = pupils / 7;
+                }
+                else avr = pupils / 7 + 1;
+
+                cash += avr * salary;
+                if (bank >= cash)
+                {
+                    answer = true;
+                }
+            }
+                // end
+
+                return answer;
         }
     }
 }
