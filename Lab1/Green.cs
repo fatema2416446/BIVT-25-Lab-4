@@ -1,15 +1,20 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Green
     {
         public bool Task1(double d)
         {
             bool answer = false;
-
             // code here
 
-            // end
 
+            if  (d >= 1 || d <= -1 )
+            {
+                answer = true;
+
+            }
+
+            // end
             return answer;
         }
         public bool Task2(double d, double f)
@@ -17,7 +22,11 @@
             bool answer = false;
 
             // code here
-
+            
+            if ((d + f)/2 >= 0 )
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -27,6 +36,13 @@
             bool answer = false;
 
             // code here
+            int c = a + b;
+            int d = (Math.Abs(a) + Math.Abs(b)) / 2;
+            if (c > d)
+            {
+                answer = true;
+            }
+
 
             // end
 
@@ -37,7 +53,9 @@
             int answer = 0;
 
             // code here
-
+            int d = Math.Max(a, b);
+            d = Math.Max(d, c);
+            answer = d;
             // end
 
             return answer;
@@ -47,20 +65,36 @@
             double answer = 0;
 
             // code here
+            if (x > 1 || x < -1)
+            {
+                answer = 0;
+            }
+            else
+            {
+                answer = (x * x) - 1;
 
-            // end
+            }
+                // end
 
-            return answer;
+                return answer;
         }
         public bool Task6(double x, double y)
         {
             bool answer = false;
 
             // code here
+           if (x>= 0 && y<= 1 - x&& x>= -1 && x <= 1 && y >= 0 && y <=1)
+            {
+                answer = true;
+            }
+           
+            
+            
+            
 
             // end
 
-            return answer;
+                return answer;
         }
 
         public bool Task7(int n)
@@ -68,17 +102,27 @@
             bool answer = true;
 
             // code here
+            if (n < 0)
+            {
+                answer = false;
+            }
+            else if (n % 2 == 0)
+            {
+                answer = false;
+            }
+                // end
 
-            // end
-
-            return answer;
+                return answer;
         }
         public bool Task8(int X, int Y)
         {
             bool answer = false;
 
             // code here
-
+            if (X >= 7 && Y*X/2>=210 && Y * X / 2 <= 360)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
