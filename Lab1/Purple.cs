@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Purple
     {
@@ -7,7 +7,10 @@
             bool answer = false;
 
             // code here
-
+            if ((a * b > 0) && (a * c > 0) && (b * c > 0))
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -17,7 +20,10 @@
             bool answer = false;
 
             // code here
-
+            if (Math.Max(a, b) % Math.Min(a, b) == 0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -27,7 +33,10 @@
             bool answer = false;
 
             // code here
-
+            if ((Math.Max(a, b) == Math.Pow(Math.Min(a, b), 2)) || (Math.Max(a, b) == Math.Pow(Math.Min(a, b), 3)))
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -37,7 +46,7 @@
             double answer = 0;
 
             // code here
-
+            answer = (Math.Pow(f, 2) - 4 * d * g);
             // end
 
             return answer;
@@ -47,7 +56,18 @@
             double answer = 0;
 
             // code here
-
+            if (x <= -1)
+            {
+                answer = 1;
+            }
+            else if (-1 < x && x <= 1)
+            {
+                answer = -1 * x;
+            }
+            else
+            {
+                answer = -1;
+            }
             // end
 
             return answer;
@@ -57,7 +77,10 @@
             bool answer = false;
 
             // code here
-
+            if (squareS / circleS >= Math.PI / 2)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -68,21 +91,68 @@
             int answer = 0;
 
             // code here
-
+            if (s == true)
+            {
+                if (t == true)
+                {
+                    answer = 6;
+                }
+                else
+                {
+                    if (f == true)
+                    {
+                        answer = 10;
+                    }
+                    else
+                    {
+                        answer = 2;
+                    }
+                }
+            }
+            else
+            {
+                if (t == true)
+                {
+                    answer = 3;
+                }
+                else
+                {
+                    if (f == true)
+                    {
+                        answer = 5;
+                    }
+                    else
+                    {
+                        answer = 1;
+                    }
+                }
+            }
             // end
 
-            return answer;
+                return answer;
         }
         public bool Task8(int year, int pupils, int salary)
         {
             bool answer = false;
             const int bank = 10000;
-
             // code here
-            
+            int summa = 0;
+            if (year % 4 == 0)
+            {
+                answer = false;
+            }
+            else
+            {
+                summa += pupils * 5;
+                summa += Convert.ToInt32(Math.Ceiling(pupils / 7.0)) * salary;
+                if (summa <= 10000)
+                {
+                    answer = true;
+                }
+            }
             // end
 
-            return answer;
+                return answer;
         }
     }
 }
