@@ -8,6 +8,11 @@
 
             // code here
 
+            if (Math.Abs(d) >= 1)
+            {
+                answer = true;
+            }
+
             // end
 
             return answer;
@@ -18,6 +23,11 @@
 
             // code here
 
+            if ((d + f) / 2 > 0)
+            {
+                answer = true;
+            }
+
             // end
 
             return answer;
@@ -27,7 +37,10 @@
             bool answer = false;
 
             // code here
-
+            if ((a + b) > ((Math.Abs (a) + Math.Abs(b)))/2)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -37,7 +50,7 @@
             int answer = 0;
 
             // code here
-
+            answer = Math.Max(a, Math.Max(b, c));
             // end
 
             return answer;
@@ -47,10 +60,17 @@
             double answer = 0;
 
             // code here
+            if (Math.Abs(x) > 1)
+            {
+                answer = 0;
+            }
+            else
+            {
+                answer = (x * x) - 1;
+            }
+                // end
 
-            // end
-
-            return answer;
+                return answer;
         }
         public bool Task6(double x, double y)
         {
@@ -58,9 +78,24 @@
 
             // code here
 
-            // end
+            if (y >= 0)
+            {
+                if (x >= 0 && y <= 1 - x)
+                {
+                    answer = true;
+                }
+                else
+                {
+                    if (x < 0 && y < 1 + x)
+                    {
+                        answer = true;
+                    }
+                }
+            }
 
-            return answer;
+                // end
+
+                return answer;
         }
 
         public bool Task7(int n)
@@ -68,16 +103,37 @@
             bool answer = true;
 
             // code here
+            if (n < 0)
+            {
+                answer = false;
+            }
+            else
+            {
+                if (n % 2 == 0)
+                {
+                    answer = false;
+                }
+            }
 
-            // end
 
-            return answer;
+                // end
+
+                return answer;
         }
         public bool Task8(int X, int Y)
         {
             bool answer = false;
 
             // code here
+
+            int teaDays = (X + 1) / 2;
+            int breathDays = Math.Min(X, 7);
+            int sleepDurationMin = 600 - breathDays * 60 + teaDays * Y;
+
+            if (sleepDurationMin >= 420 && sleepDurationMin <= 540){
+                answer = true;
+            }
+            ;
 
             // end
 
