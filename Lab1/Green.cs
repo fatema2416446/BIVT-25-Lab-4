@@ -7,7 +7,10 @@
             bool answer = false;
 
             // code here
-
+            if (d >= 1 || d <= -1)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -17,7 +20,15 @@
             bool answer = false;
 
             // code here
-
+            var sum = d + f;
+            if (sum > 0)
+            {
+                answer = true;
+            }
+            else
+            {
+                answer = false;
+            }
             // end
 
             return answer;
@@ -27,7 +38,16 @@
             bool answer = false;
 
             // code here
-
+            var sum = a + b;
+            var AbsSum = Math.Abs(a) + Math.Abs(b);
+            if (sum > (AbsSum / 2))
+            {
+                answer = true;
+            }
+            else
+            {  
+                answer = false; 
+            }
             // end
 
             return answer;
@@ -37,7 +57,8 @@
             int answer = 0;
 
             // code here
-
+            int[] numbers = { a, b, c };
+            answer = numbers.Max();
             // end
 
             return answer;
@@ -47,7 +68,14 @@
             double answer = 0;
 
             // code here
-
+            if (Math.Abs(x) > 1)
+            {
+                answer = 0;
+            }
+            else
+            {
+                answer = x * x - 1;
+            }
             // end
 
             return answer;
@@ -57,7 +85,20 @@
             bool answer = false;
 
             // code here
-
+            if (x < 0)
+            {
+                if (y <= 1 + x && y >= 0)
+                {
+                    answer = true;
+                }
+            }
+            else
+            {
+                if ( y <= 1 - x && y >= 0)
+                {
+                    answer = true;
+                }
+            }
             // end
 
             return answer;
@@ -68,7 +109,17 @@
             bool answer = true;
 
             // code here
-
+            if (n < 0)
+            {
+                answer = false;
+            }
+            else
+            {
+                if (n % 2 == 0)
+                {
+                    answer = false;
+                }
+            }
             // end
 
             return answer;
@@ -78,7 +129,16 @@
             bool answer = false;
 
             // code here
+            if (X >= 7)
+            {
+                var OddDays = (X + 1) / 2;
+                var SleepTime = 600 - 60 * 7 + Y * OddDays;
 
+                if (420 <= SleepTime && SleepTime <= 540)
+                {
+                    answer = true;
+                }
+            }
             // end
 
             return answer;
