@@ -78,9 +78,28 @@
             bool answer = false;
             const int bank = 10000;
 
-            // code here
-            
+            // code
+            int aurora = 0;
+            if (pupils % 7 == 0)
+            {
+                aurora = pupils / 7;
+            }
+            else
+            {
+                aurora = pupils / 7 + 1;
+            }
+
+            if (((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) == false)
+            {
+                if ((aurora * salary + pupils * 5) <= bank)
+                {
+                    answer = true;
+                }
+            }
+
             // end
+
+           
 
             return answer;
         }
