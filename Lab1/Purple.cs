@@ -20,10 +20,19 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            if (Math.Max(a, b) % Math.Min(a, b) == 0)
+            double var;
+            if (a != 0 && b != 0)
+            {
+                if (Math.Max(Math.Abs(a), Math.Abs(b)) % Math.Min(Math.Abs(a), Math.Abs(b)) == 0)
+                {
+                    answer = true;
+                }
+            }
+            else
             {
                 answer = true;
             }
+            Console.WriteLine(answer);
             // end
 
             return answer;
@@ -77,7 +86,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            if (squareS / circleS >= Math.PI / 2)
+            if (2 * Math.Sqrt(circleS / Math.PI) >= Math.Sqrt(2 * squareS))
             {
                 answer = true;
             }
@@ -137,14 +146,18 @@ namespace Lab1
             const int bank = 10000;
             // code here
             int summa = 0;
-            if (year % 4 == 0)
+            if (year % 400 == 0)
+            {
+                answer = false;
+            }
+            else if (year % 4 == 0 && year % 100 != 0)
             {
                 answer = false;
             }
             else
             {
                 summa += pupils * 5;
-                summa += Convert.ToInt32(Math.Ceiling(pupils / 7.0)) * salary;
+                summa += Convert.ToInt32((Math.Ceiling(pupils / 7.0))) * salary;
                 if (summa <= 10000)
                 {
                     answer = true;
