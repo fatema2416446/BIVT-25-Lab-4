@@ -10,7 +10,8 @@ namespace Lab1
 
             // code here
 
-            if (Math.Min(a, b) > 0 || Math.Max(a, b) < 0) {
+            if (Math.Min(a, b) > 0 || Math.Max(a, b) < 0)
+            {
                 answer = true;
             }
 
@@ -38,10 +39,12 @@ namespace Lab1
             bool answer = false;
 
             // code here
+
             if (b != 0 && a % b == 0)
             {
                 answer = true;
             }
+
             // end
 
             return answer;
@@ -51,6 +54,7 @@ namespace Lab1
             double answer = 0;
 
             // code here
+
             if (Math.Abs(answer) < Math.Abs(d))
             {
                 answer = d;
@@ -63,6 +67,7 @@ namespace Lab1
             {
                 answer = g;
             }
+
             // end
 
             return answer;
@@ -72,17 +77,20 @@ namespace Lab1
             double answer = 0;
 
             // code here
+
             if (x <= -1)
             {
                 answer = 0;
             }
-            else if (x <= 0) {
+            else if (x <= 0)
+            {
                 answer = x + 1;
             }
             else
             {
                 answer = 1;
             }
+
             // end
 
             return answer;
@@ -109,6 +117,7 @@ namespace Lab1
             int answer = 0;
 
             // code here
+
             if (Math.Abs(d) < Math.Abs(f))
             {
                 if (d > 0)
@@ -116,12 +125,14 @@ namespace Lab1
                     answer = -1;
                 }
             }
-            else { 
+            else
+            {
                 if (f > 0)
                 {
                     answer = 1;
                 }
             }
+
             // end
 
             return answer;
@@ -131,6 +142,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
+
             int sm = a / 2 + b / 2 + c / 2;
             if (sm % 3 == 0 && sm >= 3)
             {
@@ -140,6 +152,7 @@ namespace Lab1
             {
                 answer = true;
             }
+
             // end
 
             return answer;

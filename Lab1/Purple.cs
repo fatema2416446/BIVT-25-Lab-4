@@ -8,6 +8,13 @@
 
             // code here
 
+            int minimum = Math.Min(Math.Min(a, b), c);
+            int maximum = Math.Max(Math.Max(a, b), c);
+            if (minimum > 0 || maximum < 0)
+            {
+                answer = true;
+            }
+
             // end
 
             return answer;
@@ -17,6 +24,11 @@
             bool answer = false;
 
             // code here
+
+            if (b != 0 && a % b == 0 || a != 0 && b % a == 0)
+            {
+                answer = true;
+            }
 
             // end
 
@@ -28,6 +40,12 @@
 
             // code here
 
+            if (a * a == b || a * a * a == b || 
+                b * b == a || b * b * b == a)
+            {
+                answer = true;
+            }
+
             // end
 
             return answer;
@@ -37,6 +55,8 @@
             double answer = 0;
 
             // code here
+
+            answer = f * f - 4 * d * g;
 
             // end
 
@@ -48,6 +68,19 @@
 
             // code here
 
+            if (x <= -1)
+            {
+                answer = 1;
+            }
+            else if (x <= 1)
+            {
+                answer = -x;
+            }
+            else
+            {
+                answer = -1;
+            }
+
             // end
 
             return answer;
@@ -57,6 +90,11 @@
             bool answer = false;
 
             // code here
+
+            if (squareS * Math.PI <= 2 * circleS)
+            {
+                answer = true;
+            }
 
             // end
 
@@ -69,6 +107,37 @@
 
             // code here
 
+            if (s)
+            {
+                if (t)
+                {
+                    answer = 6;
+                }
+                else if (f)
+                {
+                    answer = 10;
+                }
+                else
+                {
+                    answer = 2;
+                }
+            }
+            else
+            {
+                if (t)
+                {
+                    answer = 3;
+                }
+                else if (f)
+                {
+                    answer = 5;
+                }
+                else
+                {
+                    answer = 1;
+                }
+            }
+
             // end
 
             return answer;
@@ -79,7 +148,22 @@
             const int bank = 10000;
 
             // code here
-            
+
+            int min_cnt_aur = (pupils + 7 - 1) / 7;
+            int min_sum_salary = salary * min_cnt_aur;
+            int equip = pupils * 5;
+            int expence = min_sum_salary + equip;
+            bool leap_year = false;
+            if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0)
+            {
+                leap_year = true;
+            }
+            if (expence <= bank && !leap_year)
+            {
+                answer = true;
+            }
+
+
             // end
 
             return answer;
