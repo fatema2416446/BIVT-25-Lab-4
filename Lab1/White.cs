@@ -1,4 +1,7 @@
-﻿namespace Lab1
+﻿using System.Security.Cryptography.X509Certificates;
+using System.Transactions;
+
+namespace Lab1
 {
     public class White
     {
@@ -7,7 +10,14 @@
             bool answer = false;
 
             // code here
-
+            if (d > 0)
+            {
+                answer = true;
+            } 
+            else
+            {
+                answer = false;
+            }
             // end
 
             return answer;
@@ -17,7 +27,14 @@
             bool answer = false;
 
             // code here
-
+            if (n%2 == 0)
+            {
+                answer = true;
+            }
+            else
+            {
+                answer = false;
+            }
             // end
 
             return answer;
@@ -27,7 +44,8 @@
             int answer = 0;
 
             // code here
-
+            answer = Math.Max(a, b);
+            Console.WriteLine("true");
             // end
 
             return answer;
