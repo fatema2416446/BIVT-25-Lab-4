@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class White
     {
@@ -6,9 +6,8 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            if (d > 0) { answer = true; }
+            else { answer = false; }
 
             return answer;
         }
@@ -16,9 +15,8 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            if (n % 2 == 0) { answer = true; }
+            else { answer = false; }
 
             return answer;
         }
@@ -26,9 +24,8 @@
         {
             int answer = 0;
 
-            // code here
-
-            // end
+            if (a > b) { answer = a; }
+            else { answer = b; }
 
             return answer;
         }
@@ -36,9 +33,8 @@
         {
             double answer = 0;
 
-            // code here
-
-            // end
+            if (Math.Abs(d) > Math.Abs(f)) { answer = f; }
+            else { answer = d; }
 
             return answer;
         }
@@ -46,19 +42,22 @@
         {
             double answer = 0;
 
-            // code here
+            if (Math.Abs(x) > 1) { answer = 1; }
+            else { answer = x; }
 
-            // end
 
             return answer;
         }
         public bool Task6(double x, double y, double r)
         {
             bool answer = false;
+            
+            
 
-            // code here
-
-            // end
+            if (Math.Abs(x * x + y * y - r * r) <= Math.Pow(10, -4))
+            {
+                answer = true;
+            }
 
             return answer;
         }
@@ -67,19 +66,23 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
-
+            int s = n * n;
+            if (s - n > 2 * n)
+            {
+                if (n % 2 == 0) { answer = true; }
+                else { answer = false; }
+            }
+            else { return answer; }
             return answer;
         }
         public bool Task8(double L, int T, int M)
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            if (L <= 30)
+            {
+                if (T + M >= 5 && M % 2 == 0) { answer |= true; }
+            }
 
             return answer;
         }
