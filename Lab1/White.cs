@@ -8,6 +8,8 @@
 
             // code here
 
+            answer=(d > 0);
+
             // end
 
             return answer;
