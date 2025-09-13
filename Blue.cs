@@ -9,7 +9,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            answer = ((a > 0 && b > 0) || (a < 0 && b < 0));
+            answer = ((a > 0 and b > 0) || (a < 0 and b < 0));
             // end
 
             return answer;
@@ -29,9 +29,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            if (b != 0) {
-                answer = (Math.Abs(a) % Math.Abs(b) == 0);
-            }
+            answer = a % b == 0;
             // end
 
             return answer;
@@ -41,9 +39,9 @@ namespace Lab1
             double answer = 0;
 
             // code here
-            double absoluteValueForD = Math.Abs(d);
-            double absoluteValueForF = Math.Abs(f);
-            double absoluteValueForG = Math.Abs(g);
+            absoluteValueForD = Math.Abs(d);
+            absoluteValueForF = Math.Abs(f);
+            absoluteValueForG = Math.Abs(g);
             if (absoluteValueForD > absoluteValueForF)
             {
                 if (absoluteValueForD > absoluteValueForG)
@@ -54,19 +52,18 @@ namespace Lab1
                 {
                     answer = g;
                 }
-            }
             else
             {
                 if (absoluteValueForF > absoluteValueForG)
-                {
-                    answer = f;
-                }
+                    {
+                        answer = f;
+                    }
                 else
-                {
-                    answer = g;
+                    {
+                        answer = g;
+                    }
                 }
             }
-            
             // end
 
             return answer;
@@ -96,7 +93,7 @@ namespace Lab1
             // code here
             double dOfCircle = 2 * Math.Sqrt(circleS / Math.PI);  
             double dOfSquare = Math.Sqrt(squareS);
-            answer = dOfCircle <= dOfSquare;
+            answer = dOfCircle < dOfSquare
             // end
 
             return answer;
@@ -132,21 +129,17 @@ namespace Lab1
 
             // code here
             int summAmountOfMoney = a / 2 + b / 2 + c / 2;
-            if (summAmountOfMoney % 3 == 0)
+            if (summAmountOfMoney % 3 == 0 && summAmountOfMoney / 3 < a
+                && summAmountOfMoney / 3 < b && summAmountOfMoney / 3 < c)
             {
-                int moneyInOneBox = summAmountOfMoney / 3;
-                if (moneyInOneBox <= a && moneyInOneBox <= b &&  moneyInOneBox <= c && moneyInOneBox != 0)
-                {
-                    answer = true;
-                }
-                
+                anwer = true;
             }
             else if (summAmountOfMoney % 3 == 2)
             {
                 int newSumm = summAmountOfMoney + 1;
-                if (newSumm / 3 <= a && newSumm / 3 <= b && newSumm / 3 <= c)
+                if (newSumm / 3 < a && newSumm / 3 < && newSumm / 3 < c)
                 {
-                    answer = true;
+                    answer = true
                 }
             }
             
