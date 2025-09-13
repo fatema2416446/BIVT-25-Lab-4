@@ -77,8 +77,22 @@
         {
             bool answer = false;
 
-            // code here
+            int dni = 0;
 
+            if (X % 2 == 0)
+            {
+                dni = X / 2;
+            }
+            else
+            {
+                dni = X / 2 + 1;
+            }
+
+            // code here
+            if (X >= 7 && (240 <= (dni * Y)) && (360 >=  (dni * Y)))
+            {
+                answer = true;
+            }
             // end
 
             return answer;

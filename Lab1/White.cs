@@ -78,7 +78,10 @@
             bool answer = false;
 
             // code here
-
+            if (L <= 30 && (T + M) >= 5 && M%2==0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
