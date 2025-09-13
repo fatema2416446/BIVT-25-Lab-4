@@ -46,7 +46,7 @@
         {
             // Arrange
             var input = new int[] { 0, 5, 2, -1, -3, -2, 11, 22, 11, -418 };
-            var answer = new bool[] { true, false, true, false, false, false, false, true, false, false };
+            var answer = new bool[] { true, false, true, false, false, false, false, true, false };
             var test = new bool[answer.Length];
             // Act
             for (int i = 0; i < answer.Length; i++)
@@ -158,3 +158,4 @@
         }
     }
 }
+

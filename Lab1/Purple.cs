@@ -79,10 +79,27 @@
             const int bank = 10000;
 
             // code here
-            
+            if (!(((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)))
+            {
+                int avrori = 0;
+                if (pupils % 7 == 0)
+                {
+                    avrori = pupils / 7;
+                }
+                else
+                {
+                    avrori = (pupils / 7) + 1;
+                }
+                int money = (avrori * salary) + (pupils * 5);
+                if (money <= bank)
+                {
+                    answer = true;
+                }
+            }
             // end
 
             return answer;
         }
     }
+
 }
