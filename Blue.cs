@@ -1,4 +1,4 @@
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Security.Cryptography;
 
 namespace Lab1
@@ -110,7 +110,7 @@ namespace Lab1
             c = c / 2;
 
 
-            
+
             if (a + b + c > 0)
             {
                 if (((a + b + c) % 3 == 0) || ((a + b + c + 1) % 3 == 0)) answer = true;
