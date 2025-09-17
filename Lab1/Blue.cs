@@ -7,7 +7,10 @@
             bool answer = false;
 
             // code here
-
+            if ((a > 0 && b > 0) || (a < 0 && b < 0))
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -17,7 +20,11 @@
             bool answer = false;
 
             // code here
-
+            d = Math.Abs(d);
+            if (d - Math.Floor(d) >= 0.00001)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -27,7 +34,13 @@
             bool answer = false;
 
             // code here
-
+            if (b != 0) 
+            { 
+                if (a % b == 0)
+                {
+                    answer = true;
+                }
+            }
             // end
 
             return answer;
@@ -37,7 +50,18 @@
             double answer = 0;
 
             // code here
-
+            if ((Math.Abs(d) > Math.Abs(f)) || ((Math.Abs(d) == Math.Abs(f))))
+            {
+                answer = d;
+            }
+            else 
+            {
+                answer = f;
+            }
+            if (Math.Abs(g) > Math.Abs(answer))
+            {
+                answer = g;
+            }
             // end
 
             return answer;
@@ -47,8 +71,15 @@
             double answer = 0;
 
             // code here
-
-            // end
+            if (x > -1 && x <= 0)
+            {
+                answer = x + 1;
+            }
+            else if (x > 0)
+            {
+                answer = 1;
+            }
+                // end
 
             return answer;
         }
@@ -57,7 +88,10 @@
             bool answer = false;
 
             // code here
-
+            if ((Math.Sqrt(squareS) / 2) >= Math.Sqrt(circleS / Math.PI)) 
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -68,17 +102,48 @@
             int answer = 0;
 
             // code here
-
-            // end
-
-            return answer;
+            if (Math.Abs(d) < Math.Abs(f))
+            {
+                if (d > 0)
+                {
+                    answer = -1;
+                }
+            }
+            else
+            {
+                if (f > 0)
+                {
+                    answer = 1;
+                }
+                // end
+            }
+                return answer;
         }
         public bool Task8(int a, int b, int c)
         {
             bool answer = false;
 
             // code here
-            
+            int sum = a / 2 + b / 2 + c / 2;
+            if (sum % 3 == 0)
+            {
+                int meshok = sum / 3;
+                if (a >= meshok && b >= meshok && c >= meshok && meshok >= 1)
+                {
+                    answer = true;
+                }
+            }
+            else 
+            { 
+                if ((sum + 1) % 3 == 0)
+                {
+                    int meshok = (sum + 1) / 3;
+                    if (a >= meshok && b >= meshok && c >= meshok && meshok >= 1)
+                    {
+                        answer = true;
+                    }
+                }
+            }
             // end
 
             return answer;
