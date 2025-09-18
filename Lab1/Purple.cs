@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Purple
     {
@@ -7,7 +7,8 @@
             bool answer = false;
 
             // code here
-
+            if ((a < 0 & b < 0 & c < 0) || (a > 0 & b > 0 & c > 0))
+            { answer = true; }
             // end
 
             return answer;
@@ -17,7 +18,9 @@
             bool answer = false;
 
             // code here
-
+            if ((b!=0 && a%b ==0)||(a!=0 && b % a == 0)){
+                answer = true;
+            }
             // end
 
             return answer;
@@ -27,7 +30,20 @@
             bool answer = false;
 
             // code here
-
+            if (a > b)
+            {
+                if (a == Math.Pow(b, 2) || a == Math.Pow(b, 3))
+                {
+                    answer = true;
+                }
+            }
+            else if (a < b)
+            {
+                if (b == Math.Pow(a, 2) || b == Math.Pow(a, 3))
+                {
+                    answer = true;
+                }
+            }
             // end
 
             return answer;
@@ -37,7 +53,7 @@
             double answer = 0;
 
             // code here
-
+            answer = Math.Pow(f, 2) - (4 * d * g);
             // end
 
             return answer;
@@ -47,7 +63,18 @@
             double answer = 0;
 
             // code here
-
+            if (x <= -1)
+            {
+                answer = 1;
+            }
+            else if (-1 < x && x <= 1)
+            {
+                answer = -x;
+            }
+            else
+            {
+                answer = -1;
+            }
             // end
 
             return answer;
@@ -57,7 +84,10 @@
             bool answer = false;
 
             // code here
-
+            if (squareS <= circleS * 2 / Math.PI)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -68,7 +98,43 @@
             int answer = 0;
 
             // code here
+            if (s)
+            {
+                if (t)
+                {
+                    answer = 6;
 
+                }
+                else
+                {
+                    if (f)
+                    {
+                        answer = 10;
+                    }
+                    else
+                    {
+                        answer = 2;
+                    }
+                }
+            }
+            else
+            {
+                if (t)
+                {
+                    answer = 3;
+                }
+                else
+                {
+                    if (f)
+                    {
+                        answer = 5;
+                    }
+                    else
+                    {
+                        answer = 1;
+                    }
+                }
+            }
             // end
 
             return answer;
@@ -79,7 +145,26 @@
             const int bank = 10000;
 
             // code here
-            
+            if ((year%4==0 && year % 100 != 0) || (year % 400 == 0))
+            {
+                return answer;
+            }
+            else
+            {
+                int teachers;
+                if (pupils % 7 != 0)
+                {
+                    teachers = (pupils / 7) + 1;
+                }
+                else
+                {
+                    teachers = pupils / 7;
+                }
+                if (pupils * 5 + teachers * salary <= bank)
+                {
+                    answer = true;
+                }
+            }
             // end
 
             return answer;
