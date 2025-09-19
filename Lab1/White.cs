@@ -1,4 +1,6 @@
-﻿using System.IO.Pipes;
+﻿using System.ComponentModel.Design;
+using System.IO.Pipes;
+using System.Runtime.InteropServices;
 
 namespace Lab1
 {
@@ -49,11 +51,10 @@ namespace Lab1
             double a = Math.Abs(f);
             double b = Math.Abs(d);
             if (a < b) answer = f;
-            else answer = d;
+            else
             {
-                
+                answer = d;
             }
-
             // end
 
             return answer;
@@ -63,17 +64,23 @@ namespace Lab1
             double answer = 0;
 
             // code here
+            if (Math.Abs(x) > 1) answer = 1;
+            else answer = x;
 
-            // end
+                // end
 
-            return answer;
+                return answer;
         }
         public bool Task6(double x, double y, double r)
         {
             bool answer = false;
 
             // code here
-
+            double vir = x * x + y * y - r * r;
+            if (Math.Abs(vir) <= Math.Pow(10, -6) || Math.Abs(vir) <= r * r * 1e-4)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -81,20 +88,36 @@ namespace Lab1
 
         public bool Task7(int n)
         {
-            bool answer = false;
-
+                
             // code here
+            int s = n * n;
+            bool answer = false;
+            if (s - n > 2 * n) 
+            { 
+                if (n % 2 == 0)
+                {
+                    answer = true;
+                }
+            }
+            return answer;
 
             // end
 
-            return answer;
         }
         public bool Task8(double L, int T, int M)
         {
             bool answer = false;
 
             // code here
-
+            if (L / 10 <= 3)
+            {
+                if (T+M >= 5)
+                {
+                    if ( M % 2 == 0)
+                        answer = true;
+                }
+                
+            }   
             // end
 
             return answer;
