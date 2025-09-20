@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class White
     {
@@ -7,6 +7,10 @@
             bool answer = false;
 
             // code here
+            if (d > 0)
+            {
+                answer = true;
+            }
 
             // end
 
@@ -17,6 +21,15 @@
             bool answer = false;
 
             // code here
+            if (n % 2 == 0) 
+            {
+                answer = true;
+            }
+            else
+            {
+                answer = false;
+            }
+                
 
             // end
 
@@ -27,26 +40,49 @@
             int answer = 0;
 
             // code here
+            if (a > b)
+            {
+                answer = a;
+            }
+            else
+            {
+                answer = b;
+            }
+                // end
 
-            // end
-
-            return answer;
+                return answer;
         }
         public double Task4(double d, double f)
         {
             double answer = 0;
 
             // code here
+            if (Math.Abs(d) > Math.Abs(f))
+            {
+                answer = f;
+            }
+            else
+            {
+                answer = d;
+            }
 
-            // end
+                // end
 
-            return answer;
+                return answer;
         }
         public double Task5(double x)
         {
             double answer = 0;
 
             // code here
+            if (Math.Abs(x) > 1)
+            {
+                answer = 1;
+            }
+            if (Math.Abs(x) <= 1)
+            {
+                answer = x;
+            }
 
             // end
 
@@ -57,10 +93,17 @@
             bool answer = false;
 
             // code here
+            if (Math.Abs(x*x + y*y - r*r) <= Math.Pow(10,-4))
+            {
+                answer = true;
+            }
+            else
+            {
+                answer = false;
+            }
+                // end
 
-            // end
-
-            return answer;
+                return answer;
         }
 
         public bool Task7(int n)
@@ -68,20 +111,42 @@
             bool answer = false;
 
             // code here
+            int s = n * n;
+            if (s - n > 2 * n)
+            {
+                if (n % 2 == 0)
+                {
+                    answer = true;
+                }
+            }
+            else
+            {
+                answer = false;
+            }
 
-            // end
+                // end
 
-            return answer;
+                return answer;
         }
         public bool Task8(double L, int T, int M)
         {
             bool answer = false;
 
             // code here
+            if ((L / 10 <= 3) && (M + T >= 5) && (M % 2 == 0))
+            {
+                answer = true;
+            }
+            else
+            {
+                answer = false;            
+            }
+            Console.WriteLine($"L = {L} T = {T} M = {M} answer = {answer}");
 
-            // end
+                // end
 
-            return answer;
+                return answer;
         }
     }
+
 }
