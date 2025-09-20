@@ -6,9 +6,7 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            answer = d > 0;
 
             return answer;
         }
