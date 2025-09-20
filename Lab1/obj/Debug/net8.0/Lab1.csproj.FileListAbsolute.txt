@@ -1,0 +1,15 @@
+C:\Users\pprud\Source\Repos\BIVT-25-Lab-1\Lab1\obj\Debug\net8.0\Lab1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pprud\Source\Repos\BIVT-25-Lab-1\Lab1\obj\Debug\net8.0\Lab1.AssemblyInfoInputs.cache
+C:\Users\pprud\Source\Repos\BIVT-25-Lab-1\Lab1\obj\Debug\net8.0\Lab1.AssemblyInfo.cs
+C:\Users\pprud\Source\Repos\BIVT-25-Lab-1\Lab1\obj\Debug\net8.0\Lab1.csproj.CoreCompileInputs.cache
+C:\Users\pprud\Source\Repos\BIVT-25-Lab-1\Lab1\obj\Debug\net8.0\Lab1.sourcelink.json
+C:\Users\pprud\Source\Repos\BIVT-25-Lab-1\Lab1\bin\Debug\net8.0\Lab1.exe
+C:\Users\pprud\Source\Repos\BIVT-25-Lab-1\Lab1\bin\Debug\net8.0\Lab1.deps.json
+C:\Users\pprud\Source\Repos\BIVT-25-Lab-1\Lab1\bin\Debug\net8.0\Lab1.runtimeconfig.json
+C:\Users\pprud\Source\Repos\BIVT-25-Lab-1\Lab1\bin\Debug\net8.0\Lab1.dll
+C:\Users\pprud\Source\Repos\BIVT-25-Lab-1\Lab1\bin\Debug\net8.0\Lab1.pdb
+C:\Users\pprud\Source\Repos\BIVT-25-Lab-1\Lab1\obj\Debug\net8.0\Lab1.dll
+C:\Users\pprud\Source\Repos\BIVT-25-Lab-1\Lab1\obj\Debug\net8.0\refint\Lab1.dll
+C:\Users\pprud\Source\Repos\BIVT-25-Lab-1\Lab1\obj\Debug\net8.0\Lab1.pdb
+C:\Users\pprud\Source\Repos\BIVT-25-Lab-1\Lab1\obj\Debug\net8.0\Lab1.genruntimeconfig.cache
+C:\Users\pprud\Source\Repos\BIVT-25-Lab-1\Lab1\obj\Debug\net8.0\ref\Lab1.dll

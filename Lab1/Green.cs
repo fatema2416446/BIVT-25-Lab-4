@@ -6,19 +6,22 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
-
+           if(Math.Abs(d) >= 1)
+            {
+                answer = true;
+             
+            }
+                
             return answer;
         }
         public bool Task2(double d, double f)
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            if((d + f)/ 2 > 0)
+            {
+                answer = true;
+            }
 
             return answer;
         }
@@ -26,9 +29,10 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            if((a + b) > Math.Abs((a + b)/2))
+            {
+                answer = true;
+            }
 
             return answer;
         }
@@ -36,50 +40,75 @@
         {
             int answer = 0;
 
-            // code here
-
-            // end
-
-            return answer;
+            if((a > b) && (a > c))
+            {
+                answer = a;
+            }
+            if((b > a) && (b > c))
+            {
+                answer = b;
+            }
+            if((c > a) && (c > b))
+            {
+                answer = c;
+            }
+                return answer;
         }
         public double Task5(double x)
         {
             double answer = 0;
 
-            // code here
-
-            // end
-
+            if(Math.Abs(x) > 1)
+            {
+                answer = 0;
+            }
+            if(Math.Abs(x) <= 1)
+            {
+                answer = Math.Pow(x, 2) - 1;
+            }
             return answer;
         }
         public bool Task6(double x, double y)
         {
             bool answer = false;
+            if((y>=0) && (((x < 0) && (y <= 1 + x)) || ((x >= 0) && (y <= 1 - x))))
+            {
+                answer = true;
 
-            // code here
-
-            // end
-
-            return answer;
+            }
+            else
+            {
+                answer = false;
+            }
+                return answer;
         }
 
         public bool Task7(int n)
         {
             bool answer = true;
 
-            // code here
+            if(n < 0)
+            {
+                answer = false;
+            }
+            else
+            {
+                if(n % 2 == 0)
+                {
+                    answer = false;
+                }
+            }
 
-            // end
-
-            return answer;
+                return answer;
         }
         public bool Task8(int X, int Y)
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            if((Y >= 4 * 60) && (X >= 7))
+            {
+                answer = true;
+            }
 
             return answer;
         }

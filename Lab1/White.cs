@@ -1,4 +1,6 @@
-﻿namespace Lab1
+﻿ 
+
+namespace Lab1
 {
     public class White
     {
@@ -6,70 +8,76 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
-
-            return answer;
+            if(d > 0)
+                answer = true;
+            
+                return answer;
         }
         public bool Task2(int n)
         {
             bool answer = false;
-
-            // code here
-
-            // end
-
+            if (n % 2 == 0)
+                answer = true;
             return answer;
         }
         public int Task3(int a, int b)
         {
-            int answer = 0;
+            if (a > b)
+            {
+                return a;
+            }
 
-            // code here
-
-            // end
-
-            return answer;
+            else
+            {
+                return b;
+            }
         }
+
+
         public double Task4(double d, double f)
         {
-            double answer = 0;
+            if (Math.Abs(d) > Math.Abs(f))
+            {
+                return f;
+            }
 
-            // code here
-
-            // end
-
-            return answer;
+            else
+            {
+                return d;
+            }
         }
         public double Task5(double x)
         {
             double answer = 0;
 
-            // code here
-
-            // end
-
-            return answer;
+            if(Math.Abs(x) > 1)
+            {
+                answer = 1;
+            }
+            if (Math.Abs(x) <= 1)
+            {
+                answer = x;
+            }
+             return answer;   
         }
         public bool Task6(double x, double y, double r)
         {
             bool answer = false;
-
-            // code here
-
-            // end
-
+            if(Math.Abs((Math.Pow(x, 2) +  Math.Pow(y, 2) - Math.Pow(r, 2))) <= Math.Pow(10, -4))
+            {
+                answer =  true;
+            }
             return answer;
         }
 
         public bool Task7(int n)
         {
             bool answer = false;
-
-            // code here
-
-            // end
+            double s = Math.Pow(n, 2);
+            if(((s - n) > 2 * n) & ( n % 2 == 0 ))
+            {
+                answer = true;
+            }
 
             return answer;
         }
@@ -77,10 +85,10 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
-
+           if ((L <= 3 * 10) && (T + M >= 5) && (M % 2 == 0))
+            {
+                answer = true;
+            }
             return answer;
         }
     }

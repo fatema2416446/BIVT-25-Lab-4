@@ -6,19 +6,17 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
-
+            if(((a > 0) && (b > 0)) || ((a < 0) && (b < 0)))
+            {
+                answer = true;
+            }
             return answer;
         }
         public bool Task2(double d)
         {
             bool answer = false;
 
-            // code here
-
-            // end
+           
 
             return answer;
         }
@@ -26,9 +24,10 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            if(a % b == 0)
+            {
+                answer = true;
+            }
 
             return answer;
         }
