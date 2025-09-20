@@ -6,9 +6,7 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            answer = (a > 0 && b > 0 && c > 0) || (a < 0 && b < 0 && c < 0) || ( a == b && b == c && c == 0);
 
             return answer;
         }
@@ -16,9 +14,7 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            answer = ((b != 0) && (Math.Abs(a) % Math.Abs(b) == 0)) || ((a != 0) && (Math.Abs(b) % Math.Abs(a) == 0));
 
             return answer;
         }
@@ -26,9 +22,7 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            answer = (Math.Pow(a, 2) == b) || (Math.Pow(b, 2) == a) || (Math.Pow(a, 3) == b) || (Math.Pow(b, 3) == a);
 
             return answer;
         }
@@ -36,9 +30,7 @@
         {
             double answer = 0;
 
-            // code here
-
-            // end
+            answer = Math.Pow(f, 2) - 4 * d * g;
 
             return answer;
         }
@@ -46,9 +38,18 @@
         {
             double answer = 0;
 
-            // code here
-
-            // end
+            if (x <= -1)
+            {
+                answer = 1;
+            }
+            else if (x > 1)
+            {
+                answer = -1;
+            }
+            else
+            {
+                answer = -x;
+            }
 
             return answer;
         }
@@ -56,9 +57,9 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            double radius2 = circleS / Math.PI;
+            double diagonal = squareS * 2;
+            answer = (Math.Sqrt(radius2) * 2) >= Math.Sqrt(diagonal);
 
             return answer;
         }
@@ -67,9 +68,42 @@
         {
             int answer = 0;
 
-            // code here
-
-            // end
+            if (s)
+            {
+                if (t)
+                {
+                    answer = 6;
+                }
+                else
+                {
+                    if (f)
+                    {
+                        answer = 10;
+                    }
+                    else
+                    {
+                        answer = 2;
+                    }
+                }
+            }
+            else
+            {
+                if (t)
+                {
+                    answer = 3;
+                }
+                else
+                {
+                    if (f)
+                    {
+                        answer = 5;
+                    }
+                    else
+                    {
+                        answer = 1;
+                    }
+                }
+            }
 
             return answer;
         }
@@ -78,10 +112,8 @@
             bool answer = false;
             const int bank = 10000;
 
-            // code here
-            
-            // end
-
+            int avroraCount = ((pupils + 6) / 7);
+            answer = ((((year % 4 ==0) && (year % 100 != 0)) || (year % 400 == 0)) == false) && ((pupils * 5 + avroraCount * salary) <= bank);
             return answer;
         }
     }
