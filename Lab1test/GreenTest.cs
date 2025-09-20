@@ -148,6 +148,7 @@
             for (int i = 0; i < answer.Length; i++)
             {
                 test[i] = main.Task8(input[0, i], input[1, i]);
+                Console.WriteLine(test[i]);
             }
             // Assert
             for (int i = 0; i < answer.Length; i++)

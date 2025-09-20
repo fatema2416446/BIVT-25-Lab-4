@@ -2553,23 +2553,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Markosias\\.nuget\\packages\\": {},
+    "C:\\Users\\stasd\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Markosias\\Documents\\BIVT-25\\BIVT-25-Lab-1\\Lab1test\\Lab1test.csproj",
+      "projectUniqueName": "D:\\UNIK\\2025\\Proga\\Lab\\Lab1\\BIVT-25-Lab-1\\Lab1test\\Lab1test.csproj",
       "projectName": "Lab1test",
-      "projectPath": "C:\\Users\\Markosias\\Documents\\BIVT-25\\BIVT-25-Lab-1\\Lab1test\\Lab1test.csproj",
-      "packagesPath": "C:\\Users\\Markosias\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Markosias\\Documents\\BIVT-25\\BIVT-25-Lab-1\\Lab1test\\obj\\",
+      "projectPath": "D:\\UNIK\\2025\\Proga\\Lab\\Lab1\\BIVT-25-Lab-1\\Lab1test\\Lab1test.csproj",
+      "packagesPath": "C:\\Users\\stasd\\.nuget\\packages\\",
+      "outputPath": "D:\\UNIK\\2025\\Proga\\Lab\\Lab1\\BIVT-25-Lab-1\\Lab1test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Markosias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\stasd\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2584,8 +2584,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Markosias\\Documents\\BIVT-25\\BIVT-25-Lab-1\\Lab1\\Lab1.csproj": {
-              "projectPath": "C:\\Users\\Markosias\\Documents\\BIVT-25\\BIVT-25-Lab-1\\Lab1\\Lab1.csproj"
+            "D:\\UNIK\\2025\\Proga\\Lab\\Lab1\\BIVT-25-Lab-1\\Lab1\\Lab1.csproj": {
+              "projectPath": "D:\\UNIK\\2025\\Proga\\Lab\\Lab1\\BIVT-25-Lab-1\\Lab1\\Lab1.csproj"
             }
           }
         }

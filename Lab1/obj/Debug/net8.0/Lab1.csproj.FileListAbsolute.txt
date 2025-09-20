@@ -1,0 +1,15 @@
+D:\UNIK\2025\Proga\Lab\Lab1\BIVT-25-Lab-1\Lab1\bin\Debug\net8.0\Lab1.exe
+D:\UNIK\2025\Proga\Lab\Lab1\BIVT-25-Lab-1\Lab1\bin\Debug\net8.0\Lab1.deps.json
+D:\UNIK\2025\Proga\Lab\Lab1\BIVT-25-Lab-1\Lab1\bin\Debug\net8.0\Lab1.runtimeconfig.json
+D:\UNIK\2025\Proga\Lab\Lab1\BIVT-25-Lab-1\Lab1\bin\Debug\net8.0\Lab1.dll
+D:\UNIK\2025\Proga\Lab\Lab1\BIVT-25-Lab-1\Lab1\bin\Debug\net8.0\Lab1.pdb
+D:\UNIK\2025\Proga\Lab\Lab1\BIVT-25-Lab-1\Lab1\obj\Debug\net8.0\Lab1.GeneratedMSBuildEditorConfig.editorconfig
+D:\UNIK\2025\Proga\Lab\Lab1\BIVT-25-Lab-1\Lab1\obj\Debug\net8.0\Lab1.AssemblyInfoInputs.cache
+D:\UNIK\2025\Proga\Lab\Lab1\BIVT-25-Lab-1\Lab1\obj\Debug\net8.0\Lab1.AssemblyInfo.cs
+D:\UNIK\2025\Proga\Lab\Lab1\BIVT-25-Lab-1\Lab1\obj\Debug\net8.0\Lab1.csproj.CoreCompileInputs.cache
+D:\UNIK\2025\Proga\Lab\Lab1\BIVT-25-Lab-1\Lab1\obj\Debug\net8.0\Lab1.sourcelink.json
+D:\UNIK\2025\Proga\Lab\Lab1\BIVT-25-Lab-1\Lab1\obj\Debug\net8.0\Lab1.dll
+D:\UNIK\2025\Proga\Lab\Lab1\BIVT-25-Lab-1\Lab1\obj\Debug\net8.0\refint\Lab1.dll
+D:\UNIK\2025\Proga\Lab\Lab1\BIVT-25-Lab-1\Lab1\obj\Debug\net8.0\Lab1.pdb
+D:\UNIK\2025\Proga\Lab\Lab1\BIVT-25-Lab-1\Lab1\obj\Debug\net8.0\Lab1.genruntimeconfig.cache
+D:\UNIK\2025\Proga\Lab\Lab1\BIVT-25-Lab-1\Lab1\obj\Debug\net8.0\ref\Lab1.dll
