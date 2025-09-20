@@ -1,4 +1,4 @@
-﻿namespace Lab1_test
+﻿﻿namespace Lab1_test
 {
     [TestClass]
     public sealed class GreenTest
