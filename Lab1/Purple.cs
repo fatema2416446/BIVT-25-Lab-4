@@ -1,4 +1,6 @@
-﻿namespace Lab1
+using System.Runtime.InteropServices.Marshalling;
+
+namespace Lab1
 {
     public class Purple
     {
@@ -7,7 +9,7 @@
             bool answer = false;
 
             // code here
-
+            if ((a > 0 && b > 0 && c > 0) || (a < 0 && b < 0 && c < 0)) answer = true;
             // end
 
             return answer;
@@ -17,7 +19,10 @@
             bool answer = false;
 
             // code here
-
+            a = Math.Abs(a);
+            b = Math.Abs(b);
+            if (b != 0 && a % b == 0) answer = true;
+            if (a != 0 && b % a == 0) answer = true;
             // end
 
             return answer;
@@ -27,6 +32,8 @@
             bool answer = false;
 
             // code here
+            if ((a * a == b || a * a * a == b) || (b * b == a || b * b * b == a)) answer = true;
+
 
             // end
 
@@ -37,7 +44,7 @@
             double answer = 0;
 
             // code here
-
+            answer = f * f - 4 * d * g;
             // end
 
             return answer;
@@ -47,7 +54,9 @@
             double answer = 0;
 
             // code here
-
+            if (x <= -1) answer = 1;
+            if (x > -1 && x <= 1) answer = -x;
+            if (x > 1) answer = -1;
             // end
 
             return answer;
@@ -57,7 +66,9 @@
             bool answer = false;
 
             // code here
-
+            double Circle1 = Math.Sqrt(circleS / 3.14) * 2;
+            double Square1 = Math.Sqrt(squareS) * Math.Sqrt(2);
+            if (Square1 < Circle1) answer = true;
             // end
 
             return answer;
@@ -68,21 +79,56 @@
             int answer = 0;
 
             // code here
+            if (s == true)
+            {
+                if (t == true)
+                {
+                    answer = 6;
+                }
+                else 
+                {
+                    if(f == true)
+                    {
+                        answer = 10;
+                    }
+                    else
+                    {
+                        answer = 2;
+                    }
+                }
+            }
+            else
+            {
+                if (t == true)
+                {
+                    answer = 3;
+                }
+                else
+                {
+                    if (f == true)
+                    {
+                        answer = 5;
+                    }
+                    else
+                    {
+                        answer = 1;
+                    }
+                }
+            }
+                // end
 
-            // end
-
-            return answer;
+                return answer;
         }
         public bool Task8(int year, int pupils, int salary)
         {
-            bool answer = false;
-            const int bank = 10000;
+            if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) return false;
+            double avrors = pupils / 7.0;
+            double avrors_ceiling = Math.Ceiling(avrors);
 
-            // code here
-            
-            // end
+            double new_bank = avrors_ceiling * salary + pupils * 5;
 
-            return answer;
+            return new_bank <= 10000;
         }
     }
 }
+
