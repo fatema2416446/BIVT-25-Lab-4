@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Purple
     {
@@ -7,7 +7,14 @@
             bool answer = false;
 
             // code here
-
+            if (a < 0 && b < 0 && c < 0)
+            {
+                answer = true;
+            }
+            if (a > 0 && b > 0 && c > 0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -17,7 +24,14 @@
             bool answer = false;
 
             // code here
-
+            if (a != 0 && b % a == 0)
+            {
+                answer = true;
+            }
+            if (b != 0 && a % b == 0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -27,7 +41,10 @@
             bool answer = false;
 
             // code here
-
+            if (Math.Pow(a, 2) == b || Math.Pow(a, 3) == b || Math.Pow(b, 2) == a || Math.Pow(b, 3) == a)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -37,7 +54,7 @@
             double answer = 0;
 
             // code here
-
+            answer = Math.Pow(f, 2) - 4 * d * g;
             // end
 
             return answer;
@@ -47,17 +64,31 @@
             double answer = 0;
 
             // code here
+            if (x <= -1)
+            {
+                answer = 1;
+            }
+            else if (-1 < x && x <= 1)
+            {
+                answer = -x;
+            }
+            else
+            {
+                answer = -1;
+            }
+                // end
 
-            // end
-
-            return answer;
+                return answer;
         }
         public bool Task6(double squareS, double circleS)
         {
             bool answer = false;
 
             // code here
-
+            if (circleS*2 >= Math.PI * squareS)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -68,10 +99,45 @@
             int answer = 0;
 
             // code here
+            if (s)
+            {
+                if (t)
+                {
+                    answer = 6;
+                }
+                else
+                {
+                    if (f)
+                    {
+                        answer = 10;
+                    }
+                    else
+                    {
+                        answer = 2;
+                    }
+                }
+            }
+            else
+            {
+                if (t)
+                {
+                    answer = 3;
+                }
+                else
+                {
+                    if (f)
+                    {
+                        answer = 5;
+                    }
+                    else
+                    {
+                        answer = 1;
+                    }
+                }
+            }
+                // end
 
-            // end
-
-            return answer;
+                return answer;
         }
         public bool Task8(int year, int pupils, int salary)
         {
@@ -79,7 +145,19 @@
             const int bank = 10000;
 
             // code here
-            
+            int money = salary * (pupils / 7);
+            if (pupils % 7 != 0)
+            {
+                money += salary;
+            }
+
+            if (!((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)))
+            {
+                if (bank >= money + 5 * pupils)
+                {
+                    answer = true;
+                }
+            }
             // end
 
             return answer;
