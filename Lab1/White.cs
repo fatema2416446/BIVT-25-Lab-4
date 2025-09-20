@@ -7,7 +7,8 @@
             bool answer = false;
 
             // code here
-
+            answer = d > 0;
+            Console.WriteLine();
             // end
 
             return answer;
@@ -17,7 +18,7 @@
             bool answer = false;
 
             // code here
-
+            
             // end
 
             return answer;
