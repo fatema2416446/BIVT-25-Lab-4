@@ -7,7 +7,11 @@
             bool answer = false;
 
             // code here
-
+            if (Math.Abs(d) >= 1)
+            {
+                answer = true;
+ 
+            }
             // end
 
             return answer;
@@ -17,7 +21,15 @@
             bool answer = false;
 
             // code here
-
+            double a = d + f;
+if ((a / 2) > 0)
+{
+    answer = true;
+}
+else
+{
+    answer = false;
+}
             // end
 
             return answer;
@@ -27,7 +39,14 @@
             bool answer = false;
 
             // code here
-
+if ((a + b) > (Math.Abs((a + b) / 2)))
+{
+    answer = true;
+}
+else
+{
+    answer = false;
+}
             // end
 
             return answer;
@@ -37,7 +56,18 @@
             int answer = 0;
 
             // code here
-
+if (a>b && a>c)
+{
+    answer = a;
+}
+if (b > a && b > c)
+{
+    answer = b;
+}
+if (c > a && c>b)
+{
+    answer = c;
+}
             // end
 
             return answer;
@@ -47,7 +77,14 @@
             double answer = 0;
 
             // code here
-
+if (Math.Abs(x)>1)
+{
+    answer = 0;
+}
+else
+{
+    answer = Math.Pow(x,2)-1;
+}
             // end
 
             return answer;
@@ -57,7 +94,30 @@
             bool answer = false;
 
             // code here
-
+if (x<0)
+{
+    
+    if (1 + x>=y && y>=0)
+    {
+        answer= true;
+    }
+    else
+    {
+        answer = false;
+    }
+}
+else
+{
+    
+    if (1-x>=y && y>=0)
+    {
+        answer = true;
+    }
+    else
+    {
+        answer = false;
+    }
+}
             // end
 
             return answer;
@@ -68,7 +128,21 @@
             bool answer = true;
 
             // code here
-
+if (n < 0)
+{
+    answer = false;
+}
+else
+{
+    if (n%2==0)
+    {
+        answer = false;
+    }
+    else
+    {
+        answer=true;
+    }
+}
             // end
 
             return answer;
@@ -84,4 +158,5 @@
             return answer;
         }
     }
+
 }
