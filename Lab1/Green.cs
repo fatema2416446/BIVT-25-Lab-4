@@ -76,15 +76,14 @@ namespace Lab1
         {
             double answer = 0;
             
-            double x1 = Math.Abs(x);
-            double x2 = Math.Pow(x, 2);
-            if (x1 > 0)
+           
+            if (Math.Abs(x) > 0)
             {
                 answer = 0;
             }
-            else if (x1 <= 0)
+            else if (Math.Abs(x) <= 0)
             {
-                answer = x2 - 1;
+                answer = Math.Pow(x,2) - 1;
             }
 
             return answer;
@@ -92,18 +91,31 @@ namespace Lab1
         public bool Task6(double x, double y)
         {
             bool answer = false;
-            
 
-            if (x < 0)
+
+            bool inside;
+
+
+
+            if (y >= 0 && y <= 1 - Math.Abs(x))
             {
-                y = 1 + x;
+                inside = true;
             }
             else
             {
-                y = 1 - x;
+                inside = false;
+            }
+            double f;
+            if (x < 0)
+            {
+                f = 1 + x;
+            }
+            else
+            {
+                f = -x;
             }
 
-            if (x >= -1 && x <= 1 && y >= 0 && y <= 1)
+            if (inside)
             {
                 answer = true;
             }
@@ -111,7 +123,7 @@ namespace Lab1
             {
                 answer = false;
             }
-           
+
 
             return answer;
         }
