@@ -77,11 +77,11 @@ namespace Lab1
             double answer = 0;
             
            
-            if (Math.Abs(x) > 0)
+            if (Math.Abs(x) > 1)
             {
                 answer = 0;
             }
-            else if (Math.Abs(x) <= 0)
+            else if (Math.Abs(x) <= 1)
             {
                 answer = Math.Pow(x,2) - 1;
             }
