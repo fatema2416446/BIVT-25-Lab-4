@@ -6,7 +6,7 @@ namespace Lab1
         {
             bool answer = false;
 
-            d = 6.2;
+            d = 1.5;
 
             double m = Math.Abs(d);
 
@@ -26,8 +26,8 @@ namespace Lab1
         {
             bool answer = false;
 
-            d = 5.6;
-            f = 2.3;
+            d = 1.5;
+            f = 1;
             double b = (d + f) / 2;
             if (b > 0)
             {
@@ -57,9 +57,9 @@ namespace Lab1
         {
             int answer = 0;
 
-            a = 2;
+            a = 0;
             b = 5;
-            c = 54;
+            c = 2;
             if (a > b && a > c)
             {
                 answer = a;
@@ -79,7 +79,7 @@ namespace Lab1
         public double Task5(double x)
         {
             double answer = 0;
-            x = 0;
+            x = 1.5;
             double x1 = Math.Abs(x);
             double x2 = Math.Pow(x, 2);
             if (x1 > 0)
@@ -96,8 +96,8 @@ namespace Lab1
         public bool Task6(double x, double y)
         {
             bool answer = false;
-            x = 1;
-            y = 0;
+            x = 1.5;
+            y = 2.3;
 
             if (x < 0)
             {
@@ -124,7 +124,7 @@ namespace Lab1
         public bool Task7(int n)
         {
             bool answer = true;
-            n = 3;
+            n = 5;
 
             if (n < 0)
 
@@ -146,7 +146,7 @@ namespace Lab1
         {
             bool answer = false;
             X = 10;
-            Y = 30;
+            Y = 50;
             int hours = 7;
             double a = 60 + (Y / 2.0);
             double daysneeded = (hours * 60) / a;
