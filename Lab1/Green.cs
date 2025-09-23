@@ -153,35 +153,19 @@ namespace Lab1
         {
             bool answer = false;
 
-            int sleepTime = 4 * 60;
-            int wakeTime = 14 * 60;
-
-
-            int targetWake = 7 * 60;
-
-            for (int day = 1; day <= X; day++)
+            int hours = Y;
+            for (int i = 0; i < X; i++)
             {
 
-                wakeTime -= 60;
-
-
-                if (day % 2 == 1)
+                if (i % 2 == 1)
                 {
-                    sleepTime -= Y;
+                    hours += Y;
                 }
+            }
 
-
-                if (wakeTime <= targetWake)
-                {
-                    int sleepDuration = wakeTime - sleepTime;
-
-
-                    if (wakeTime == targetWake && sleepDuration >= 7 * 60 && sleepDuration <= 9 * 60)
-                    {
-                        answer = true;
-                    }
-                }
-
+            if ((hours >= 240) && (hours <= 360) && X >= 7)
+            {
+                answer = true;
             }
 
             return answer;
