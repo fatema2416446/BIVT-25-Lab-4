@@ -153,41 +153,35 @@ namespace Lab1
         {
             bool answer = false;
 
-            int currentSleepStart = 4;
-            int currentSleepEnd = 14;
+            int sleepTime = 4 * 60;
+            int wakeTime = 14 * 60;
 
 
-            int desiredWakeUp = 7;
+            int targetWake = 7 * 60;
 
-
-
-            int daysLeft = X;
-            int currentWakeUp = currentSleepEnd;
-
-            for (int day = 1; day <= daysLeft; day++)
+            for (int day = 1; day <= X; day++)
             {
 
-                currentWakeUp -= 1;
+                wakeTime -= 60;
 
 
-                bool drinksTeaToday = (day % 2 == 1);
-
-
-                int teaEffectHours = drinksTeaToday ? Y / 60 : 0;
-
-
-                int potentialSleepStart = currentWakeUp - 10;
-                int newSleepStart = potentialSleepStart - teaEffectHours;
-
-
-                if (currentWakeUp <= desiredWakeUp)
+                if (day % 2 == 1)
                 {
-                    answer = true;
+                    sleepTime -= Y;
                 }
-                else
+
+
+                if (wakeTime <= targetWake)
                 {
-                    answer = false;
+                    int sleepDuration = wakeTime - sleepTime;
+
+
+                    if (wakeTime == targetWake && sleepDuration >= 7 * 60 && sleepDuration <= 9 * 60)
+                    {
+                        answer = true;
+                    }
                 }
+
             }
 
             return answer;
