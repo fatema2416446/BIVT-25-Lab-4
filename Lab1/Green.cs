@@ -96,10 +96,27 @@ namespace Lab1
         public bool Task6(double x, double y)
         {
             bool answer = false;
+            x = 1;
+            y = 0;
 
-            // code here
+            if (x < 0)
+            {
+                y = 1 + x;
+            }
+            else
+            {
+                y = 1 - x;
+            }
 
-            // end
+            if (x >= -1 && x <= 1 && y >= 0 && y <= 1)
+            {
+                answer = true;
+            }
+            else
+            {
+                answer = false;
+            }
+           
 
             return answer;
         }
@@ -128,10 +145,19 @@ namespace Lab1
         public bool Task8(int X, int Y)
         {
             bool answer = false;
-
-            // code here
-
-            // end
+            X = 10;
+            Y = 30;
+            int hours = 7;
+            double a = 60 + (Y / 2.0);
+            double daysneeded = (hours * 60) / a;
+            if (X >= daysneeded)
+            {
+                answer = true;
+            }
+            else
+            {
+                answer = false;
+            }
 
             return answer;
         }
