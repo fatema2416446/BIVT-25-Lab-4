@@ -152,17 +152,18 @@ namespace Lab1
         public bool Task8(int X, int Y)
         {
             bool answer = false;
-            
-            int hours = 7;
-            double a = 60 + (Y / 2.0);
-            double daysneeded = (hours * 60) / a;
-            if (X >= daysneeded)
+
+            int teaDays = (X + 1) / 2;
+
+            int totalEffect = X * 60 + teaDays * Y;
+
+            if (totalEffect >= 240)
             {
                 answer = true;
             }
             else
             {
-                answer = false;
+                answer =  false;
             }
 
             return answer;
