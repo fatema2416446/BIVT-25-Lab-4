@@ -1,193 +1,160 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Runtime.InteropServices;
-
-namespace Lab2
+namespace Lab1
 {
     public class Purple
     {
-        const double E = 0.0001;
-        public int Task1(int n, int p, int h)
+        public bool Task1(int a, int b, int c)
         {
-            int answer = 0;
+            bool answer = false;
 
             // code here
-            for (int i = 0; i < n; i++)
+            if ((a * b > 0) && (a * c > 0) && (b * c > 0))
             {
-                answer += (int)Math.Pow(p + i * h, 2);
+                answer = true;
             }
             // end
 
             return answer;
         }
-        public (int quotient, int remainder) Task2(int a, int b)
+        public bool Task2(int a, int b)
         {
-            int quotient = 0;
-            int remainder = 0;
+            bool answer = false;
 
             // code here
-            while (a >= b)
+            if (a == 0 || b == 0 || Math.Max(Math.Abs(a), Math.Abs(b)) % Math.Min(Math.Abs(a), Math.Abs(b)) == 0)
             {
-                a -= b;
-                quotient++;
+                answer = true;
             }
-            remainder = a;
             // end
 
-            return (quotient, remainder);
+            return answer;
         }
-        public double Task3()
+        public bool Task3(int a, int b)
+        {
+            bool answer = false;
+
+            // code here
+            if ((Math.Max(a, b) == Math.Pow(Math.Min(a, b), 2)) || (Math.Max(a, b) == Math.Pow(Math.Min(a, b), 3)))
+            {
+                answer = true;
+            }
+            // end
+
+            return answer;
+        }
+        public double Task4(double d, double f, double g)
         {
             double answer = 0;
 
             // code here
-            double epsilon = 0.0001;
-            double firstch = 1;
-            double firstzn = 1;
-            double secondch = 2;
-            double secondzn = 1;
-            double thirdch = 3;
-            double thirdzn = 2;
-            while (Math.Abs(thirdch / thirdzn - secondch / secondzn) >= epsilon)
+            answer = (Math.Pow(f, 2) - 4 * d * g);
+            // end
+
+            return answer;
+        }
+        public double Task5(double x)
+        {
+            double answer = 0;
+
+            // code here
+            if (x <= -1)
             {
-                firstch = secondch;
-                firstzn = secondzn;
-                secondch = thirdch;
-                secondzn = thirdzn;
-                thirdch = firstch + secondch;
-                thirdzn = firstzn + secondzn;
-                answer = thirdch / thirdzn;
+                answer = 1;
+            }
+            else if (-1 < x && x <= 1)
+            {
+                answer = -1 * x;
+            }
+            else
+            {
+                answer = -1;
             }
             // end
 
             return answer;
         }
-        public int Task4(double b, double q)
+        public bool Task6(double squareS, double circleS)
+        {
+            bool answer = false;
+
+            // code here
+            double a = Math.Pow(squareS, 0.5);
+            double r = Math.Pow(circleS / Math.PI, 0.5);
+            if (a * Math.Pow(2, 0.5) <= 2 * r)
+            {
+                answer = true;
+            }
+            // end
+
+            return answer;
+        }
+
+        public int Task7(bool s, bool t, bool f)
         {
             int answer = 0;
 
             // code here
-            double epsilon = 0.0001;
-            double element = b;
-            int n = 1;
-            while (Math.Abs(element) >= epsilon)
+            if (s == true)
             {
-                element *= q;
-                n += 1;
-            }
-            answer = n;
-            // end
-
-            return answer;
-        }
-        public int Task5(int a, int b)
-        {
-            int answer = 0;
-
-            // code here
-            long number = a;
-            while (b > 0)
-            {
-                number *= b;
-                b--;
-            }
-            while (number >= 10)
-            {
-                number /= 10;
-                answer++;
-            }
-            // end
-
-            return answer;
-        }
-        public long Task6()
-        {
-            long answer = 0;
-
-            // code here
-            long a = 1;
-
-            for (int i = 1; i < 63; i++)
-            {
-                a *= 2;
-                answer += a;
-            }
-            answer /= (15 * 1000 * 500);
-            // end
-
-            return answer;
-        }
-
-        public int Task7(double S, double d)
-        {
-            int answer = 0;
-
-            // code here
-            double izn = S;
-            double Procent = 0;
-            int n = 0;
-            while (izn > S / 2)
-            {
-                if (izn > (S + S * d / 100))
+                if (t == true)
                 {
-                    S += S * d / 100;
-                    n += 12;
+                    answer = 6;
                 }
                 else
                 {
-                    if (n % 12 == 0)
+                    if (f == true)
                     {
-                        Procent = S * d / 12 / 100;
-                    }
-                    S += Procent;
-                    n += 1;
-                }
-            }
-            answer = n;
-            // end
-
-            return answer;
-        }
-        public (double SS, double SY) Task8(double a, double b, double h)
-        {
-            double SS = 0;
-            double SY = 0;
-
-            // code here
-            double epsilon = 0.0001;
-            double y, s;
-            for (double x = a; x <= b + 0.000001; x += h)
-            {
-                bool IsOPen = true;
-                int i = 0;
-                double sum1 = 1;
-                double sum2 = 1;
-                double sum3 = 1;
-                s = 1;
-                while (IsOPen)
-                {
-                    if (i == 0)
-                    {
-                        SS += 1;
-                        i += 1;
+                        answer = 10;
                     }
                     else
                     {
-                        s *= (-1) * x * x / ((2 * i) * (2 * i - 1));
-                        SS += s;
-                        if (Math.Abs(s) < epsilon)
-                        {
-                            IsOPen = false;
-                        }
-                        i += 1;
+                        answer = 2;
                     }
                 }
-                SY += Math.Cos(x);
+            }
+            else
+            {
+                if (t == true)
+                {
+                    answer = 3;
+                }
+                else
+                {
+                    if (f == true)
+                    {
+                        answer = 5;
+                    }
+                    else
+                    {
+                        answer = 1;
+                    }
+                }
             }
             // end
 
-            return (SS, SY);
+                return answer;
+        }
+        public bool Task8(int year, int pupils, int salary)
+        {
+            bool answer = false;
+            const int bank = 10000;
+            // code here
+            int summa = 0;
+            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+            {
+                answer = false;
+            }
+            else
+            {
+                summa += pupils * 5;
+                summa += Convert.ToInt32(Math.Ceiling(pupils / 7.0)) * salary;
+                if (summa <= 10000)
+                {
+                    answer = true;
+                }
+            }
+            // end
+
+                return answer;
         }
     }
 }
