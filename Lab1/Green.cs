@@ -86,13 +86,12 @@
             bool answer = false;
 
             // code here
-            int hours = Y + 60;
+            int hours = Y;
             for (int i = 0; i < X; i++)
             {
-                hours += 60;
                 if (i % 2 == 1) hours += Y;
             }
-            if (hours >= 240) answer = true;
+            if ((hours >= 240) && (hours<=360) && X>=7 ) answer = true;
             // end
 
             return answer;
