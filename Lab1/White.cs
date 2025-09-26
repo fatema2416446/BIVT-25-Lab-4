@@ -7,7 +7,10 @@
             bool answer = false;
 
             // code here
-
+            if (d > 0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -17,7 +20,10 @@
             bool answer = false;
 
             // code here
-
+            if (n % 2 == 0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -27,7 +33,14 @@
             int answer = 0;
 
             // code here
-
+            if (a>=b)
+            {
+                answer = a;
+            }
+            if (b>=a)
+            {
+                answer = b;
+            }
             // end
 
             return answer;
@@ -37,7 +50,10 @@
             double answer = 0;
 
             // code here
-
+    if (Math.Abs(d) >= Math.Abs(f))
+    { answer = f; }
+    if (Math.Abs(d) <= Math.Abs(f))
+        { answer = d; }
             // end
 
             return answer;
@@ -47,7 +63,12 @@
             double answer = 0;
 
             // code here
-
+        if (Math.Abs(x) >= Math.Abs(1))
+        {
+            answer = 1;
+        }
+        if (Math.Abs(x) <= Math.Abs(1))
+            { answer = x; }
             // end
 
             return answer;
@@ -57,7 +78,10 @@
             bool answer = false;
 
             // code here
-
+            if (Math.Abs(x*x + y*y - r*r)<=0.0001)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -68,7 +92,16 @@
             bool answer = false;
 
             // code here
-
+            int s = n * n;
+        
+            if ((s - n) > (2 * n))
+        
+            {
+                if ((n % 2) == 0)
+        
+                { answer = true; }
+            }
+        
             // end
 
             return answer;
@@ -78,10 +111,13 @@
             bool answer = false;
 
             // code here
-
+            if ((M % 2 == 0) && (M + T >= 5) && (L <= 30)) 
+        { answer = true; }
             // end
 
             return answer;
         }
     }
+
 }
+
