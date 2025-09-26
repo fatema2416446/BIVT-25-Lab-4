@@ -1,8 +1,8 @@
-namespace Lab1
+﻿namespace Lab1
 {
-    public class Purple
+    public class Blue
     {
-        public bool Task1(int a, int b, int c)
+        public bool Task1(int a, int b)
         {
             bool answer = false;
 
@@ -12,7 +12,7 @@ namespace Lab1
 
             return answer;
         }
-        public bool Task2(int a, int b)
+        public bool Task2(double d)
         {
             bool answer = false;
 
@@ -52,7 +52,7 @@ namespace Lab1
 
             return answer;
         }
-        public bool Task6(double squareS, double circleS)
+        public bool Task6(double circleS, double squareS)
         {
             bool answer = false;
 
@@ -63,7 +63,7 @@ namespace Lab1
             return answer;
         }
 
-        public int Task7(bool s, bool t, bool f)
+        public double Task7(double d, double f)
         {
             int answer = 0;
 
@@ -73,10 +73,9 @@ namespace Lab1
 
             return answer;
         }
-        public bool Task8(int year, int pupils, int salary)
+        public bool Task8(int a, int b, int c)
         {
             bool answer = false;
-            const int bank = 10000;
 
             // code here
             
