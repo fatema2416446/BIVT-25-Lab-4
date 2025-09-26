@@ -7,10 +7,6 @@
             bool answer = false;
 
             // code here
-            if (d > 0)
-            {
-                answer = true;
-            }
 
             // end
 
@@ -21,10 +17,6 @@
             bool answer = false;
 
             // code here
-            if (n % 2 == 0)
-            {
-                answer = true;
-            }
             // end
 
             return answer;
@@ -34,16 +26,6 @@
             int answer = 0;
 
             // code here
-
-            if (a > b)
-            {
-                answer = a;
-            }
-            else
-            {
-                answer = b;
-            }
-
             // end
 
             return answer;
@@ -53,15 +35,6 @@
             double answer = 0;
 
             // code here
-            if (abs(d) < abs(f))
-            {
-                answer = d;
-            }
-            else
-            {
-                answer = f;
-            }
-
             // end
 
             return answer;
@@ -71,11 +44,6 @@
             double answer = 0;
 
             // code here
-            if (abs(x) > 1)
-            {
-                answer
-            }
-
             // end
 
             return answer;
@@ -112,4 +80,5 @@
             return answer;
         }
     }
+
 }
