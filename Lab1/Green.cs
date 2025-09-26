@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Green
     {
@@ -6,9 +6,19 @@
         {
             bool answer = false;
 
-            // code here
+            
 
-            // end
+            double m = Math.Abs(d);
+
+            if (m >= 1)
+            {
+                answer = true;
+            }
+            else
+            {
+               answer = false;
+            }
+
 
             return answer;
         }
@@ -16,9 +26,13 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            
+            double b = (d + f) / 2;
+            if (b > 0)
+            {
+                answer = true;
+            }
+            
 
             return answer;
         }
@@ -26,9 +40,14 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            
+            double a1 = Math.Abs(a);
+            double b1 = Math.Abs(b);
+            double d = (a + b) / 2;
+            if ((a + b) > d)
+            {
+                answer = true;
+            }
 
             return answer;
         }
@@ -36,19 +55,36 @@
         {
             int answer = 0;
 
-            // code here
+           
+            if (a > b && a > c)
+            {
+                answer = a;
+            }
+            else if (b > a && b > c)
+            {
+                answer = b;
+            }
+            else
+            {
+                answer = c;
+            }
 
-            // end
 
             return answer;
         }
         public double Task5(double x)
         {
             double answer = 0;
-
-            // code here
-
-            // end
+            
+           
+            if (Math.Abs(x) > 1)
+            {
+                answer = 0;
+            }
+            else if (Math.Abs(x) <= 1)
+            {
+                answer = Math.Pow(x,2) - 1;
+            }
 
             return answer;
         }
@@ -56,9 +92,38 @@
         {
             bool answer = false;
 
-            // code here
 
-            // end
+            bool inside;
+
+
+
+            if (y >= 0 && y <= 1 - Math.Abs(x))
+            {
+                inside = true;
+            }
+            else
+            {
+                inside = false;
+            }
+            double f;
+            if (x < 0)
+            {
+                f = 1 + x;
+            }
+            else
+            {
+                f = -x;
+            }
+
+            if (inside)
+            {
+                answer = true;
+            }
+            else
+            {
+                answer = false;
+            }
+
 
             return answer;
         }
@@ -66,10 +131,21 @@
         public bool Task7(int n)
         {
             bool answer = true;
+            
 
-            // code here
+            if (n < 0)
 
-            // end
+            {
+                answer = false;
+            }
+            else if (n % 2 == 0)
+            {
+                answer = false;
+            }
+            else
+            {
+                answer = true;
+            }
 
             return answer;
         }
@@ -77,9 +153,20 @@
         {
             bool answer = false;
 
-            // code here
+            int hours = Y;
+            for (int i = 0; i < X; i++)
+            {
 
-            // end
+                if (i % 2 == 1)
+                {
+                    hours += Y;
+                }
+            }
+
+            if ((hours >= 240) && (hours <= 360) && X >= 7)
+            {
+                answer = true;
+            }
 
             return answer;
         }
