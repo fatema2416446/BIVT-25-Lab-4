@@ -7,7 +7,7 @@
             bool answer = false;
 
             // code here
-            answer = (Math.Abs(d) >= 1.0000);
+            answer = (Math.Abs(d) >= 1);
             // end
             
             return answer;
