@@ -17,7 +17,6 @@
             bool answer = false;
 
             // code here
-
             // end
 
             return answer;
@@ -27,7 +26,6 @@
             int answer = 0;
 
             // code here
-
             // end
 
             return answer;
@@ -37,7 +35,6 @@
             double answer = 0;
 
             // code here
-
             // end
 
             return answer;
@@ -47,7 +44,6 @@
             double answer = 0;
 
             // code here
-
             // end
 
             return answer;
@@ -84,4 +80,5 @@
             return answer;
         }
     }
+
 }
