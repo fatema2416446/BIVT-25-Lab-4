@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\BIVT-25-Lab-1-Thu\\Lab1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|c:\\bivt-25-lab-1-thu\\lab1\\purple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|solutionrelative:purple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|c:\\bivt-25-lab-1-thu\\lab1\\lab1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{85A09178-86F8-11FE-228E-5C505B5C870A}|Lab1.csproj|solutionrelative:lab1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Purple.cs",
+              "DocumentMoniker": "C:\\BIVT-25-Lab-1-Thu\\Lab1\\Purple.cs",
+              "RelativeDocumentMoniker": "Purple.cs",
+              "ToolTip": "C:\\BIVT-25-Lab-1-Thu\\Lab1\\Purple.cs",
+              "RelativeToolTip": "Purple.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAswBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T18:39:36.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Lab1",
+              "DocumentMoniker": "C:\\BIVT-25-Lab-1-Thu\\Lab1\\Lab1.csproj",
+              "RelativeDocumentMoniker": "Lab1.csproj",
+              "ToolTip": "C:\\BIVT-25-Lab-1-Thu\\Lab1\\Lab1.csproj",
+              "RelativeToolTip": "Lab1.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-28T18:39:30.122Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

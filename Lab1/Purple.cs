@@ -6,9 +6,7 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            answer = (a > 0 && b > 0 && c > 0) || (a < 0 && b < 0 && c < 0);
 
             return answer;
         }
@@ -16,9 +14,7 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            answer = (b != 0 && a % b == 0) || (a != 0 && b % a == 0);
 
             return answer;
         }
@@ -26,9 +22,8 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            long A = a, B = b;
+            answer = (A * A == B) || (B * B == A) || (A * A * A == B) || (B * B * B == A);
 
             return answer;
         }
@@ -36,9 +31,7 @@
         {
             double answer = 0;
 
-            // code here
-
-            // end
+            answer = f * f - 4 * d * g;
 
             return answer;
         }
@@ -46,9 +39,9 @@
         {
             double answer = 0;
 
-            // code here
-
-            // end
+            if (x <= -1) answer = 1;
+            else if (x <= 1) answer = -x;
+            else answer = -1;
 
             return answer;
         }
@@ -56,9 +49,10 @@
         {
             bool answer = false;
 
-            // code here
+            double a = System.Math.Sqrt(squareS);
+            double r = System.Math.Sqrt(circleS / System.Math.PI);
 
-            // end
+            answer = r + 1e-12 >= a * System.Math.Sqrt(2) / 2;
 
             return answer;
         }
@@ -67,20 +61,43 @@
         {
             int answer = 0;
 
-            // code here
+            if (s)
+            {
+                if (t) answer = 6;
+                else
+                {
+                    if (f) answer = 10;
+                    else answer = 2;
+                }
+            }
+            else
+            {
+                if (t) answer = 3;
+                else
+                {
+                    if (f) answer = 5;
+                    else answer = 1;
+                }
+            }
 
-            // end
 
             return answer;
         }
         public bool Task8(int year, int pupils, int salary)
         {
+
+
             bool answer = false;
             const int bank = 10000;
 
-            // code here
-            
-            // end
+            bool isLeap = (year % 400 == 0) || (year % 4 == 0 && year % 100 != 0);
+            if (isLeap) return false;
+
+            int aurors = (int)System.Math.Ceiling(pupils / 7.0);
+
+            int cost = aurors * salary + pupils * 5;
+
+            answer = cost <= bank;
 
             return answer;
         }
