@@ -7,7 +7,8 @@
             bool answer = false;
 
             // code here
-LSDRHGLN
+            if (d>0)
+                answer = true;
             // end
 
             return answer;
@@ -17,6 +18,10 @@ LSDRHGLN
             bool answer = false;
 
             // code here
+            If (0==n%2)
+                {
+                 answer=true;
+                }
 
             // end
 
@@ -27,6 +32,12 @@ LSDRHGLN
             int answer = 0;
 
             // code here
+            if (a > b)
+                Console.WriteLine(a);
+            else if (a < b)            
+                Console.WriteLine(b);
+            else
+                Console.WriteLine(b);
 
             // end
 
@@ -37,7 +48,10 @@ LSDRHGLN
             double answer = 0;
 
             // code here
-
+             if (Math.Abs(d) < Math.Abs(f))
+                 Console.WriteLine(d);
+             else
+                 Console.WriteLine(f);
             // end
 
             return answer;
@@ -86,3 +100,4 @@ LSDRHGLN
     }
 
 }
+
