@@ -1,4 +1,6 @@
-﻿namespace Lab1
+﻿using System.ComponentModel.Design;
+
+namespace Lab1
 {
     public class White
     {
@@ -7,7 +9,7 @@
             bool answer = false;
 
             // code here
-
+            answer = d > 0;
             // end
 
             return answer;
@@ -17,7 +19,7 @@
             bool answer = false;
 
             // code here
-
+            answer = n % 2 == 0;
             // end
 
             return answer;
@@ -27,7 +29,14 @@
             int answer = 0;
 
             // code here
-
+            if (a > b)
+            {
+                answer = a;
+            }
+            else
+            {
+                answer = b;
+            }
             // end
 
             return answer;
@@ -37,7 +46,7 @@
             double answer = 0;
 
             // code here
-
+            
             // end
 
             return answer;
