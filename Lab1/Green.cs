@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Green
     {
@@ -7,7 +7,10 @@
             bool answer = false;
 
             // code here
-
+            if (Math.Abs(d) >= 1)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -17,7 +20,10 @@
             bool answer = false;
 
             // code here
-
+            if ((f + d) / 2 >= 0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -27,7 +33,10 @@
             bool answer = false;
 
             // code here
-
+            if ((Math.Abs(a) + Math.Abs(b)) / 2 < (a + b))
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -37,7 +46,18 @@
             int answer = 0;
 
             // code here
-
+            if (a>b && a>c)
+            {
+                answer = a;
+            }
+            else if (b > c && b > a)
+            {
+                answer = b;
+            }
+            else
+            {
+                answer = c;
+            }
             // end
 
             return answer;
@@ -47,7 +67,14 @@
             double answer = 0;
 
             // code here
-
+            if (Math.Abs(x) > 1)
+            {
+                answer = 0;
+            }
+            else if (Math.Abs(x) <= 1)
+            {
+                answer = x * x - 1;
+            }
             // end
 
             return answer;
@@ -57,7 +84,14 @@
             bool answer = false;
 
             // code here
-
+            if (x < 0 && x > -1 && y < 1 + x && y>=0)
+            {
+                answer = true;
+            } 
+            else if(x >= 0 && x < 1 && y <1 - x && y >= 0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -68,7 +102,17 @@
             bool answer = true;
 
             // code here
-
+            if (n < 0)
+            {
+                answer = false;
+            }
+            else
+            {
+                if (n%2==0)
+                {
+                    answer = false;
+                }
+            }
             // end
 
             return answer;
@@ -78,7 +122,20 @@
             bool answer = false;
 
             // code here
+            int d = 0;
+            if (X % 2 == 0)
+            {
+                d = X / 2;
+            }
+            else
+            {
+                d = X / 2 + 1;
+            }
 
+            if (X >= 7 && (240 <= (d * Y)) && (360 >= d * Y))
+            {
+                answer = true;
+            }
             // end
 
             return answer;
