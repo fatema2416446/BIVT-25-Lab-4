@@ -7,7 +7,18 @@
             bool answer = false;
 
             // code here
-
+            if (a > 0 && b > 0 && c > 0)
+            {
+                answer = true;
+            }
+            else if (a < 0 && b < 0 && c < 0)
+            {
+                answer = true;
+            }
+            else if (a == 0 && b == 0 && c == 0)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -17,7 +28,10 @@
             bool answer = false;
 
             // code here
-
+            if ((b != 0 && a % b == 0) || (a != 0 && b % a == 0))
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -27,7 +41,10 @@
             bool answer = false;
 
             // code here
-
+            if (a * a == b || a * a * a == b ||  b * b == a || b * b * b == a)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -37,7 +54,7 @@
             double answer = 0;
 
             // code here
-
+            answer = (f * f) - (4 * g *  d);
             // end
 
             return answer;
@@ -47,7 +64,15 @@
             double answer = 0;
 
             // code here
-
+            if (x <= -1)
+            {
+                answer = 1;
+            } else if (x <= 1) {
+                answer = -x;
+            } else
+            {
+                answer = -1;
+            }
             // end
 
             return answer;
@@ -57,7 +82,10 @@
             bool answer = false;
 
             // code here
-
+            if (3.14 * squareS <= 2 * circleS)
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -68,7 +96,29 @@
             int answer = 0;
 
             // code here
-
+            if (s && t)
+            {
+                answer = 6;
+            }
+            else if (s && !t && f)
+            {
+                answer = 10;
+            }
+            else if (s && !t && !f)
+            {
+                answer = 2;
+            }
+            else if (!s && t)
+            {
+                answer = 3;
+            }
+            else if (!s && !t && f)
+            {
+                answer = 5;
+            } else
+            {
+                answer = 1;
+            }
             // end
 
             return answer;
@@ -79,7 +129,10 @@
             const int bank = 10000;
 
             // code here
-            
+            if (!((year % 4 == 0) && (year % 100 != 0 || year % 400 == 0)) && (bank - (((pupils + 6) / 7) * salary) - (pupils * 5) >= 0))
+            {
+                answer = true;
+            }
             // end
 
             return answer;
