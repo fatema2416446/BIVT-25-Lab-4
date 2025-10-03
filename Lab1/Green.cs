@@ -37,7 +37,9 @@
 
             // code here
             int sum = a + b;
-            double tbc = (a + b) / 2.0;
+            int absA = Math.Abs(a);
+            int absB = Math.Abs(b);
+            double tbc = (absA + absB) / 2.0;
             if (sum > tbc)
             {
                 answer = true;
@@ -107,13 +109,16 @@
             bool answer = true;
 
             // code here
-            if(n<0)
+            if (n < 0)
             {
                 answer = false;
             }
-            else if (n % 2 == 0)
+            else
             {
-                answer = false;
+                if (n % 2 == 0)
+                {
+                    answer = false;
+                }
             }
 
             // end
@@ -125,31 +130,21 @@
             bool answer = false;
 
             // code here
-            double sleep,wake=14;
-            bool canwake = false;
+            float startNight = 4 * 60;
+            float startMorning = 14 * 60;
+
             for (int i = 1; i <= X; i++)
             {
-                wake = wake - 1;
-                if (wake == 7)
-                {
-                    canwake = true;
-                    break;
-                }
+                if (i % 2 != 0)
+                    startNight -= Y;
+
+                startMorning -= 60;
+                if (startMorning < 7 * 60)
+                    startMorning = 7 * 60;
             }
 
-            if (X % 2 == 0)
-            {
-                sleep = 4-((X / 2) * Y) / 60.0;
-            }
-            else
-            {
-                sleep=4-Y*((X/2)+1)/60.0;
-            }
-
-            if (canwake == true && (sleep >= -2 && sleep <= 0))
-            {
+            if (7 <= (startMorning - startNight) / 60 && (startMorning - startNight) / 60 <= 9)
                 answer = true;
-            }
 
 
             // end
@@ -159,3 +154,4 @@
     }
 
 }
+
