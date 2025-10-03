@@ -4,10 +4,11 @@
     {
         public bool Task1(double d)
         {
-            bool answer = false;
+         bool answer = false;
 
             // code here
-
+            answer = d > 0;
+            Console.WriteLine(d);
             // end
 
             return answer;
