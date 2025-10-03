@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Green
     {
@@ -7,7 +7,8 @@
             bool answer = false;
 
             // code here
-
+            double a = Math.Abs(d);
+            answer = a >= 1.0;
             // end
 
             return answer;
@@ -17,7 +18,8 @@
             bool answer = false;
 
             // code here
-
+            double average = (d + f) / 2.0;
+            answer = average > 0;
             // end
 
             return answer;
@@ -27,7 +29,9 @@
             bool answer = false;
 
             // code here
-
+            int sum = a + b;
+            double averageModulus = (Math.Abs(a) + Math.Abs(b)) / 2.0;
+            answer = sum > averageModulus;
             // end
 
             return answer;
@@ -37,7 +41,9 @@
             int answer = 0;
 
             // code here
-
+            answer = a;
+            if (b > answer) answer = b;
+            if (c > answer) answer = c;
             // end
 
             return answer;
@@ -47,7 +53,14 @@
             double answer = 0;
 
             // code here
-
+            if (Math.Abs(x) > 1)
+            {
+                answer = 0;
+            }
+            else
+            {
+                answer = x * x - 1;
+            }
             // end
 
             return answer;
@@ -57,7 +70,18 @@
             bool answer = false;
 
             // code here
-
+            if (y < 0)
+            {
+                answer = false;
+            }
+            else if ((x < 0) & (y <= (x + 1)))
+            {
+                answer = true;
+            }
+            else if ((x >= 0) & (y <= (1 - x)))
+            {
+                answer = true;
+            }
             // end
 
             return answer;
@@ -68,7 +92,17 @@
             bool answer = true;
 
             // code here
-
+            if (n < 0)
+            {
+                answer = false;
+            }
+            else
+            {
+                if (n % 2 == 0)
+                {
+                    answer = false;
+                }
+            }
             // end
 
             return answer;
@@ -78,10 +112,21 @@
             bool answer = false;
 
             // code here
+            int SumY = 0;
+            if (X >= 7)
+            {
+                for (int i = 0; i < X; i++)
+                {
+                    if ((i % 2) == 0) { SumY += Y; }
 
+                }
+                if ((SumY >= 4 * 60) && (SumY <= 6 * 60))
+                    answer = true;
+            }
             // end
 
             return answer;
         }
     }
 }
+
