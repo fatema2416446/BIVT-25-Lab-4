@@ -59,7 +59,7 @@ namespace Lab1
                 answer = g;
                 // end
 
-            return answer;
+                return answer;
         }
         public double Task5(double x)
         {
