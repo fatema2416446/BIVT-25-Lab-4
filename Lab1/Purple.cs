@@ -1,88 +1,73 @@
-﻿namespace Lab1
+```csharp
+using System;
+
+namespace Lab1
 {
-    public class Purple
+    public sealed class Purple
     {
+        // Task1: true if a is strictly between b and c
         public bool Task1(int a, int b, int c)
         {
-            bool answer = false;
-
-            // code here
-
-            // end
-
-            return answer;
+            return (b < a && a < c) || (c < a && a < b);
         }
+
+        // Task2: true if either divides the other
         public bool Task2(int a, int b)
         {
-            bool answer = false;
-
-            // code here
-
-            // end
-
-            return answer;
+            if (a == 0 || b == 0) return true;
+            return (a % b == 0) || (b % a == 0);
         }
+
+        // Task3: cube relation
         public bool Task3(int a, int b)
         {
-            bool answer = false;
-
-            // code here
-
-            // end
-
-            return answer;
+            return a == b * b * b || b == a * a * a;
         }
-        public double Task4(double d, double f, double g)
+
+        // Task4: TODO refine; placeholder formula
+        public double Task4(double a, double b, double c)
         {
-            double answer = 0;
-
-            // code here
-
-            // end
-
-            return answer;
+            return a * a + b * b - c * c;
         }
+
+        // Task5: piecewise function
         public double Task5(double x)
         {
-            double answer = 0;
-
-            // code here
-
-            // end
-
-            return answer;
-        }
-        public bool Task6(double squareS, double circleS)
-        {
-            bool answer = false;
-
-            // code here
-
-            // end
-
-            return answer;
+            if (Math.Abs(x) <= 1) return -x;
+            return x > 0 ? -1 : 1;
         }
 
-        public int Task7(bool s, bool t, bool f)
+        // Task6: TODO refine
+        public bool Task6(double a, double b)
         {
-            int answer = 0;
-
-            // code here
-
-            // end
-
-            return answer;
+            return Math.Abs(a - b) < 1e-9;
         }
-        public bool Task8(int year, int pupils, int salary)
+
+        // Task7: TODO refine
+        public double Task7(bool a, bool b, bool c)
         {
-            bool answer = false;
-            const int bank = 10000;
+            // Just a placeholder mapping
+            if (a && b && c) return 6;
+            if (a && b && !c) return 6;
+            if (a && !b && c) return 2;
+            if (!a && !b && !c) return 1;
+            return 5;
+        }
 
-            // code here
-            
-            // end
-
-            return answer;
+        // Task8: TODO refine; placeholder check
+        public bool Task8(int year, int m, int d)
+        {
+            // Maybe leap year & valid date check
+            try
+            {
+                var dt = new DateTime(year, 1, 1).AddDays(m - 1).AddDays(d - 1);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }
+```
