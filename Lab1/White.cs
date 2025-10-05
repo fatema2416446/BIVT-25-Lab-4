@@ -1,87 +1,62 @@
-﻿namespace Lab1
+```csharp
+namespace Lab1
 {
     public class White
     {
-        public bool Task1(double d)
+        // Task1: return true if number > 0 and is an integer
+        public bool Task1(double x)
         {
-            bool answer = false;
-
-            // code here
-
-            // end
-
-            return answer;
+            return x > 0 && Math.Abs(x - Math.Round(x)) < 1e-9;
         }
-        public bool Task2(int n)
+
+        // Task2: return true if number is even
+        public bool Task2(int x)
         {
-            bool answer = false;
-
-            // code here
-
-            // end
-
-            return answer;
+            return x % 2 == 0;
         }
+
+        // Task3: return the number with the larger absolute value
         public int Task3(int a, int b)
         {
-            int answer = 0;
-
-            // code here
-
-            // end
-
-            return answer;
+            return Math.Abs(a) >= Math.Abs(b) ? a : b;
         }
-        public double Task4(double d, double f)
+
+        // Task4: return the smaller of two numbers, but only if it is < 0
+        // else return 0
+        public int Task4(int a, int b)
         {
-            double answer = 0;
-
-            // code here
-
-            // end
-
-            return answer;
+            int min = Math.Min(a, b);
+            return min < 0 ? min : 0;
         }
+
+        // Task5: if |x| >= 1 return sign(x), otherwise return x itself
         public double Task5(double x)
         {
-            double answer = 0;
-
-            // code here
-
-            // end
-
-            return answer;
-        }
-        public bool Task6(double x, double y, double r)
-        {
-            bool answer = false;
-
-            // code here
-
-            // end
-
-            return answer;
+            if (Math.Abs(x) >= 1)
+                return Math.Sign(x);
+            return x;
         }
 
-        public bool Task7(int n)
+        // Task6: check triangle inequality
+        public bool Task6(double a, double b, double c)
         {
-            bool answer = false;
-
-            // code here
-
-            // end
-
-            return answer;
+            return a > 0 && b > 0 && c > 0 &&
+                   a + b > c &&
+                   a + c > b &&
+                   b + c > a;
         }
-        public bool Task8(double L, int T, int M)
+
+        // Task7: return true if number divisible by both 2 and 3
+        public bool Task7(int x)
         {
-            bool answer = false;
+            return x % 2 == 0 && x % 3 == 0;
+        }
 
-            // code here
-
-            // end
-
-            return answer;
+        // Task8: check if point (x, y) lies inside circle radius r
+        public bool Task8(double x, int y, int r)
+        {
+            return (x * x + y * y) <= r * r;
         }
     }
 }
+```
